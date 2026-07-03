@@ -8,7 +8,7 @@ Headlines are pulled from public Google News RSS feeds by a GitHub Actions
 job every 3 hours and published as a static page on GitHub Pages. There are
 no servers to run and no API keys to manage.
 
-**Live page:** https://azxfoo-dev.github.io/ai-daily-news/
+**Live page:** https://azxfoo-dev.github.io/AI-Daily-News/
 
 ## One-time setup
 
@@ -18,7 +18,7 @@ no servers to run and no API keys to manage.
 3. Go to the **Actions** tab, open the **Refresh news & deploy** workflow,
    and press **Run workflow** (or just wait — it runs automatically every
    3 hours and on every push to `main`).
-4. Open https://azxfoo-dev.github.io/ai-daily-news/ and confirm headlines load.
+4. Open https://azxfoo-dev.github.io/AI-Daily-News/ and confirm headlines load.
 
 ## Install as a window on your computer
 

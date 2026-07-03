@@ -10,7 +10,7 @@
 //   4. Home screen: long-press home screen > add Scriptable widget (small or
 //      medium) > long-press it > Edit Widget > choose this script.
 
-const PAGE_URL = "https://azxfoo-dev.github.io/ai-daily-news/";
+const PAGE_URL = "https://azxfoo-dev.github.io/AI-Daily-News/";
 const DATA_URL = PAGE_URL + "news.json";
 
 // Which categories to rotate through on the lock screen (in priority order).
