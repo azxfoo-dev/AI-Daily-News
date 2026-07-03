@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>AI Daily News</title>
+  <meta name="description" content="Your daily digest of AI, politics, and world news.">
+  <meta name="theme-color" content="#3f51b5">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="icon" href="icons/icon-192.png" type="image/png">
+  <link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="Daily News">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="topbar">
+    <h1><span class="logo" aria-hidden="true"></span>AI Daily News</h1>
+    <div class="meta">
+      <span id="updated" title="When the headlines were last refreshed"></span>
+      <button id="refresh" title="Refresh now" aria-label="Refresh headlines">&#x21bb;</button>
+    </div>
+  </header>
+
+  <nav class="tabs" id="tabs" role="tablist" aria-label="News categories"></nav>
+
+  <main id="feed" aria-live="polite">
+    <p class="status" id="status">Loading headlines…</p>
+  </main>
+
+  <footer>
+    <p>Aggregated from public RSS feeds. Refreshes automatically.</p>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>

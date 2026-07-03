@@ -1,0 +1,40 @@
+{
+  "maxPerCategory": 12,
+  "categories": [
+    {
+      "id": "ai",
+      "name": "AI",
+      "feeds": [
+        "https://news.google.com/rss/search?q=%22artificial%20intelligence%22%20OR%20OpenAI%20OR%20Anthropic%20OR%20%22machine%20learning%22%20when%3A1d&hl=en-US&gl=US&ceid=US:en"
+      ]
+    },
+    {
+      "id": "politics",
+      "name": "Politics",
+      "feeds": [
+        "https://news.google.com/rss/headlines/section/topic/POLITICS?hl=en-US&gl=US&ceid=US:en"
+      ]
+    },
+    {
+      "id": "world",
+      "name": "World",
+      "feeds": [
+        "https://news.google.com/rss/headlines/section/topic/WORLD?hl=en-US&gl=US&ceid=US:en"
+      ]
+    },
+    {
+      "id": "tech",
+      "name": "Tech",
+      "feeds": [
+        "https://news.google.com/rss/headlines/section/topic/TECHNOLOGY?hl=en-US&gl=US&ceid=US:en"
+      ]
+    },
+    {
+      "id": "business",
+      "name": "Business",
+      "feeds": [
+        "https://news.google.com/rss/headlines/section/topic/BUSINESS?hl=en-US&gl=US&ceid=US:en"
+      ]
+    }
+  ]
+}

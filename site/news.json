@@ -1,0 +1,395 @@
+{
+ "updated": "2026-07-03T10:30:25.440Z",
+ "categories": [
+  {
+   "id": "ai",
+   "name": "AI",
+   "articles": [
+    {
+     "title": "OpenAI opens door to Trump’s interventionism with proposal to grant government 5% stake in company",
+     "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxOYmcza2dFRmozZWU3WlBQdS1Ob3RtV2RMU0RtdXJMSFo2NmY3MTNVcEZXTElkbnNtVHlzNjZZVldFUTFVdm1XZEJpUFNhWjk4UWVELWR5MkpwZ0ZsajA2SXgwdDVkZXdqZEx5elNNUVVmWmd5cU4xaC1qWUxsTGk2Mk1Bc3JieFo5aDNKcjd3TnB0NjNyTUEyT19tci1sSmxhVDhfUTVmYlNyTWlZb1dxU0NndFNxTWhOOWVUSWVLVS1HaXRPcTRZLWhKb2VJQ1Bv?oc=5",
+     "source": "The Corner .eu",
+     "published": "2026-07-03T10:23:01.000Z"
+    },
+    {
+     "title": "Nvidia Believes Artificial Intelligence (AI) Capex Will Reach $3 Trillion to $4 Trillion by 2030. Here's Where Its Stock Price Could Go If It's Right.",
+     "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxNWkotTFhKbGk1NHl5dlZBdWRjTGdwbGIzcDZBcm9mYnc5bUwwb3N5WVRBcEFUQXRSY2wyNmlrVHExR3ZhR2ljMENnS240b2lvVjFnQVYzR1ZmOG9KTElUWFpiSUdndEhvQ1lQRmZxTEx2T3BiWVdRMlhxWW1pT2h5ZnVXa0JaZmpQQndnZEdzZUxUNmNFQzUxMA?oc=5",
+     "source": "The Motley Fool",
+     "published": "2026-07-03T10:10:19.000Z"
+    },
+    {
+     "title": "OpenAI Woos Trump Administration as Investor",
+     "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxNcHlvU3F0S1FQX0pLVzZkOWZqMTBOZ0NiUWE2VGtiT3RnRXBuOVNoSGlXekRFN1UzaE5rSGNmclMwMGExQmdqZHBIa0hkVkJtMU9GSHphbmZoTWEwTE8zN0hINXk5SHI5TE1xMl9PYlFMbHYtRm4tSDlINTl5RWVTejNUelE2WXZmZUhRdXZR?oc=5",
+     "source": "Time Magazine",
+     "published": "2026-07-03T10:07:59.000Z"
+    },
+    {
+     "title": "Anthropic Moves to Block Chinese Firms Using Claude via Offshore Workarounds",
+     "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxOMFdpYkdPMEhuNzI4RlN1WmY1TmhyYVRjOV85RHN3T0RuUkZSOEdmb3R5OU5HMnB1emw3U096djdzU2M3U0E1Y3FhLU4yU3ZPU3hwT2VkZ1N0cUl2aUNTdVJYNmYwcHZUNnlySkRjbVhzUFB2RUtGcG15ZjNIbElBN0pHRUIxWTlVMG5KRUdpUjJib3pqbGRCTTg3QXRVZTRIVEMyVW1OaVNqNGdIaGw1ZGkyMUZ3T0doano2RmVBeU9oREZVRXc?oc=5",
+     "source": "BanklessTimes",
+     "published": "2026-07-03T10:03:56.000Z"
+    },
+    {
+     "title": "Artefact and Anthropic team up to accelerate Enterprise AI Adoption",
+     "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQZUV1bkxRNEdqWlFFYWl6U1NRMDFfTnZPeHRjS3pFWXRHdFNYNnBBMkJob1YwcUI2cFFESlJYWkw4cFVZRVBTZ2V2RkhoNjNuRWFfeGFCMFdCVGxhTWkzNHk1YVNJQnZoR3d0N1FfRi1tN1NhcmNEWEgxTnB6MkxkZnlFc0NZUFp2YzEteUtDRUduN29XbUpRQzRVbWFSdVZTVnRoS3c4RVpDTHM?oc=5",
+     "source": "AiThority",
+     "published": "2026-07-03T09:56:18.000Z"
+    },
+    {
+     "title": "Basic machine learning with lessR : Easy, simple, and free",
+     "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxOS0FZTDdHVmVTWm1seXpQdDJqcVRadGZBbDJCY1ZnT0h0YlAtaGNfZGZuYk90V1B3bXNzQUJzUl9oVDFwN3R0RnNDWGhLd0dBRjZGZTQtdkNmaml6VUgyUzIwZVBQTUg5OEZSalVTeWJXamVBX2Q2aEQtaDJlVFFnUFBEczFqbW5rQlJ3aEdRd2VMbmRYNllvUl93T0g1RzJwdWdtQTVOMmhQZnc?oc=5",
+     "source": "Open Access Government",
+     "published": "2026-07-03T09:29:40.000Z"
+    },
+    {
+     "title": "Alibaba set to block Anthropic coding tool for staff, source says",
+     "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxOUkhaZW01TE9jNDdJY0FHUk1zR2ZRRFd3UXJWbVEtdlZfWFdXSm91V0k5S2Q3MXUxLUU2NUZZaU94TlpJTzRlbjN2dVRHaENfb2tlT05xd2ZheEFxY1loRXVEblZuakJqcUpvRjl0c2xlYUEwZndra3cyTDgxSUJsYWF3emdsUU9MZkFweFR3?oc=5",
+     "source": "Latest news from Azerbaijan",
+     "published": "2026-07-03T09:28:20.000Z"
+    },
+    {
+     "title": "Regulations on data centers continue to crop up locally as OpenAI sees more federal scrutiny",
+     "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxNZE1Gamx3bkJoSTNCenE3aHdvWEJDSk5Ob2I3TnV3X0x6dmhkM2RBTEFuTW9XdEFDc1dWMTQxS19yUWxRd2JEWDBPT2VUMEk2YzN5VDlSdDFFcDJqc0V1Nk1JRGFpSDA3a3dtcFBfRGxHRDRGY3RmbjlTejlVejJUa2RCUFl6bHpLVWdBams5Wkl3UDNldGFhMWxvaXh0UllraExta0tpTGE0U2FVSXRRVmFhY2YxNklTT0xMWC0ySQ?oc=5",
+     "source": "Tri-State Alert",
+     "published": "2026-07-03T09:11:27.000Z"
+    },
+    {
+     "title": "Chinese engineers reportedly found secret routes to Claude, Anthropic is shutting them down",
+     "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxORW9VWEl0VUFwY3ZvOHBYM3d0djNsVk5Hb08taFBQNkIzSTlVUnFKazB4REtfWTRQZDhzbjdLWW9xLUtOeWU0ZUFkUjc1Q3djb1AyZ0k4TjUtSHB0cTRuQVVETjdCSUtURmEtNy1zOUVGYmFEd3dlNDE2ejFoTEFkLVJOd1l4TV9KcGhRQ2gyTC1RSDRNMXZycHBpeUlhellOTVhwS1RvZTVuRGhjZmpYZDBfSVc0T015LWhudmhlVF9IRTN0X0dPOHdpU2lFTF9Z0gHWAUFVX3lxTE5yWjhkYmJhN2hyQll0dTBHUkhLLWs4VGlJOUU4OEdXMnlqdlJSOWlXOElGcmN4cjBZSGlrbExBSEI0OW45SURKTFVtNjdWNEVsb2xQR0VhbWlmTXI4Mm1ONkVVaURERGthUEpyeTVMTVZoWWxVRnlZVEdsSk5rRWUzWEd4WW5pM0UxMkF5TDRieGFLSDhRVW81LTFnNGhQSTlwdWhMdF9ZRE9jeF82bTFmUEJreWZ4VXdwaEluS0xnZDNhUFJzQnU2WDdQUG5pUmdwT2NsMFE?oc=5",
+     "source": "Firstpost",
+     "published": "2026-07-03T09:04:28.000Z"
+    },
+    {
+     "title": "Technology Alliance of the Year: Anthropic is developing its own AI chips in partnership with Samsung",
+     "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxOb1pVcWQtN0FMWHRZdFRzR1B3QTNmOFY0VzFIeFNpd1pMd3VSRXFRQmpDLWJ5NGF6UWtQR1BKYkFZbmRfUUJSR1FaWjFhVzJNTGhUYm9PZWExaG9DVzBCaVpkbnVYbnVZOHNLQjFES2Q3ZWltWmdvX3V0YUtyMHhCdHBR?oc=5",
+     "source": "Root-Nation.com",
+     "published": "2026-07-03T09:00:44.000Z"
+    },
+    {
+     "title": "Anthropic weighing Samsung partnership to develop custom AI chips: U.S. media",
+     "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxQQmExSDBNb1hGVGdvMW1nTGh1OEJENmxaMlU0MnQ2MHBqSXlaZ0swN3B2RW4tcDBfMlFpakZWQXY0RVVoNWl1TlY3N01ZLTkzak5URkZaZGxDM3dETk5iR3VTem9lcUtadnNzN3RVRkVSSS00d3lfMzBibmpxV0dBMjF0aFdtQmVFUm1Fek1TZk5PM1I5bmFJWm9qYVRXNHA3bG1XeHprWTdsUVVEck4xNHRHVnVyOHBBWVFfTWxZZkNERnk0Znc?oc=5",
+     "source": "Korea JoongAng Daily",
+     "published": "2026-07-03T08:49:22.000Z"
+    },
+    {
+     "title": "Anthropic, Samsung Electronics Discuss AI Chip Development",
+     "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxQV1BHSGpKcFZKcVY0M2ZqVjBaMi1NUHQ3cWplUEZfT0xZbTh3ZExSRVNreDUzYzRSRmlrZExXRE9aQTQtRTd3elVTMVRjMzJTaHZiWk90d0hxRFBwenY1cVpKdnVKYmxuWnN1QTNOUXBJS2x3RlJ0cXpMOUNyN0FGMWdkSjlQUXRx?oc=5",
+     "source": "조선일보",
+     "published": "2026-07-03T08:48:45.000Z"
+    }
+   ]
+  },
+  {
+   "id": "politics",
+   "name": "Politics",
+   "articles": [
+    {
+     "title": "Andy Burnham says Labour manifesto has room for ‘movement on tax’ – UK politics live",
+     "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxQalM2NmE5REtzaU5oeXItM1BGN09acG8yQmV0MFF3MUJHSW0yMTIxU0cwS1VNQld6WEhSVzdQckMwQVlJaG50NXBYb1ZWdkFKYlhGYUtxdDdCU2JBTlBvaFp0TmFuWjhGeFNmdFMyeVZiU3FhaE1ON2ZRMVQzeDFTQ0JfUzdIcWJKeWNtX3E4UjFGLThYaEpLZWlWYVlWWm9XM0ZqZEVyTHpVZ2RHb3ZlUHlwR0ZaSzJ6WGs2TVJ2eDBYcFVjeFB4ci0zSHdDbTg?oc=5",
+     "source": "The Guardian",
+     "published": "2026-07-03T08:12:00.000Z"
+    },
+    {
+     "title": "Taiwan’s leader pays tribute to Hong Kong bookseller Lam Wing-kee after his death",
+     "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxNNl95TmpudloyVFNIZUVrd0pwVFBXd2E3T3RMckVVN1Y1bDN5WE12d0VuUFFKanVuZmZmU3BtNEU4TEFsS0ZCTUdOV1BudnRPRFhHU09LamVqNTlsbFhUV1NHakNRSmxLR0JiRDBWUFpyOU92OGNUYlpyeE9IMUpRM3FmV2pUNmN2aXBnaDdyVHE1Rkk1T3l3WEVzcVdod2tnM2tDSk9vM3Y3SWhvdnVrcVdQZkgxT01oQkRrNWk1bXDSAcABQVVfeXFMT0xwVDM4anAzWHpGXzhvWDhGcmItZ0dnaTZBYWZILUt3VU9pazVCU1NHVmlNenE4ZDVaRGJTTElxZkMxdWs5NUhFN3ZQUGVWcm1fRlRrVDRWczBvTTNROFB0Nno3NlNLRzdiWklxVU16b3g2ME1XYnhCNVUwRVUtY3lORU4ta3ZGV3NyMmFsVnRTakF4QVlJSkhMdmRMT3Z6bFR6NWdaQWUxem5saEc4bGlyVEpPbC1YeEs5T3pudGlZ?oc=5",
+     "source": "South China Morning Post",
+     "published": "2026-07-03T07:19:30.000Z"
+    },
+    {
+     "title": "Stinging criticisms from Sweden! By Donu Kogbara",
+     "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxQaXRjUzM0VThzYzM5NVE0ZFhNcjA2ZVYtYTFhSWpnSklpSWxnblNQZ2liUGszWThrRDJEcktNejdkUnpSWGljVmdLSk9aLXVUV2RrS3BqM0VuMVhfakctNlB6WlZzOVdFUkJUYV9UOHFWRmFZel9ZaklJUkc0Tm5VdUdhRDUxdjZ4cWV0MtIBkgFBVV95cUxQYmJQdE1VVlRkbTF6RW9yUDU3SnhUZFhvdjJUWmhObkoxbHF5UW9lWWcyU3BrTUdjeXVWeDhUbkEzWWhJbE5wODlSLTQ5d0V5RHpUek8yMXpYRERBaEhlUGdtLVNVQnNJMjYxWjZQeEQ5d1AyU1hMNU1UZUFBQWlFZjBKcnNvMy1DRThvZUZDTmYyQQ?oc=5",
+     "source": "Vanguard News",
+     "published": "2026-07-03T06:43:12.000Z"
+    },
+    {
+     "title": "‘My wife, Iya Alakara,’ Tinubu playfully nicknames First Lady",
+     "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxPLTVuQ1UtNDF5LWowQnI4U05iai1UVlducUd3bW80aUtWbG1XQjJHUU15cHJXTFZFRUZhcVR0QXNRQXJ0MGp6ZExxT2dibmh5dkdSeUREZWJGdm9ubGtUcFdMOFhJVGdHNzJDYzNkLWh0WU9XQWUzbk40bXRWSkJHdXNzY2U?oc=5",
+     "source": "Punch Newspapers",
+     "published": "2026-07-03T06:13:31.000Z"
+    },
+    {
+     "title": "Obi betrayed me, Atiku saw value in me, says Kenneth Okonkwo",
+     "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxNZ3lNYzlrd0hmczR1NXdicm9HTDY3MVJDSmtIRDhEUGNUV2ZtcFl6N3JRaGhsbnl1eGVYLTl0RXVST043OVhoWWRkWG9SWUJvMFU1MVNMMWZCLXlnb29ja3NnVTFGUHBKQTh3dm5wemVEOWU5RERjLWNWU1pNR3FtdkVRY1BtUQ?oc=5",
+     "source": "Punch Newspapers",
+     "published": "2026-07-03T06:01:51.000Z"
+    },
+    {
+     "title": "Utah senator shares picture of graffiti reading 'kill trillionaires,' says he's 'metaphorically speaking'",
+     "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxOeW94Nkl1SGJWS2lCVlJzREk4ZjB1Wk9neXYzTHV6cXBjN3BreHUzWUlKSy1lcjZnRzNGa2xIWWFSdzZWT19ROGtoQmhuQzRxWjhneUlVRUdoaTROdjNDSV9qTTFuME5JSlltanVGclFqZHN4cVRWdzJqV3pvaTI0TkNhZld0YWNjOW5uQWtoM01vblZRUDB6RGdFb2Q3YUhWaE02NDJLQUkxb05PLW96VTVmOVFHMC1wN2lQWWNRaWFUbDFJZ1pRWDZxWllnX3lsWEE?oc=5",
+     "source": "KSL News",
+     "published": "2026-07-03T04:02:04.000Z"
+    },
+    {
+     "title": "TVK's anti-corruption stance takes a hit with tainted AIADMK entrants",
+     "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxQQzBVMU9tVXZTMTktQURjeUNlNnR5TTh3R2h0dDM0WTdzRXk3RHJjak1wYkpWWFh2SUVyTENwOHRDRWp4SExVWnRORDliQlY1ZXRERkNtNF91TF9WeS05RTF5SjZRMWwtdmkxbC1QcFJIWXhFRGUwVHRJQjhsUlQ0QUlTMFZQVUxuODJydjVLdzVTV01rU2djUzFkdHR6WWdVX2NUVUFNdnE3WmpENEhaQnN0S3k0N1c5RVlNdmhxbw?oc=5",
+     "source": "Deccan Herald",
+     "published": "2026-07-03T03:03:35.000Z"
+    },
+    {
+     "title": "Carney backs West Coast pipeline in win for Alberta and oil industry",
+     "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxOQVdVOVhQMWhIQzdwVS1uOUVhRWtGWm4wSTNFanFta3RBb1VwTlFJR05odXdPSzNnWnBWcXVkZXFuamxiZ0ZCdGJuaEYyT2JPQlBoUU03WlZVbVNPWDRYdnpSTVdacUlUa2FtaWpUNHhJTnFiUmZPQzV2NmxWS2JhbE13?oc=5",
+     "source": "Politico",
+     "published": "2026-07-03T02:14:00.000Z"
+    },
+    {
+     "title": "Vijay formed govt through defections. Now TVK accuses rivals of poaching MLAs",
+     "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxNZzRjT1FVWTBLTnpvdTc1NkdMODdadVNLTDB1SVFPZV9CX1I5Z29kUUhudTN4MERERVhEU2lKbm5EZDdueTJ0dXl4S2syb0RnQThkNzFzRE9CMWlHeVdKbHhQZm9WWXFBSW9HdHZwRDFKV2xHNy16VE1sb1BLaVJrckVkODFFSTczQlVsdmxWc3A3eTU0NHNxdlkxUFBsczg3blU5dmJ4SHpPUF9QUzQ4ZnV0TTBneXPSAbwBQVVfeXFMTU9aeExIcDZ3VTNRVDk4S3ltdlhlNXRvUzQwakpOUmRtOTdsQkZzeDhlQ0ZCZzFTR09pMUFQcURvY3pNSDFJTUVTcTRuYW10RXR1RXpVOXp5S1ZMR1NEMGliaEY2NnZRbUtpWFF3ejBCanhqdFo0Wl80U0pSRGdNRWZZWFlkN1ZPSTNscVlBRHFiTG90ZlFkUHIxbXFqVU5fV2JsU3I3LWs5NW1RNWJIRklZZEtYTUVmMnJpY1g?oc=5",
+     "source": "India Today",
+     "published": "2026-07-03T01:35:10.000Z"
+    },
+    {
+     "title": "Burnham promises to ease cost of living pressures if he becomes prime minister",
+     "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxQQkFZTmJCSThaNTFCcDBaWXZNVG1ZWlQ4a3gycGs0QmZTbUZaTnBPcmFJb2NIMnhoTzFMczRiQzV6NThvY3BQWFRlblQwTVJOX2pENEVDNUREaXJZdTFYYmJ5bEs2Njh0aFhhLWp2a3RCZnYyNkNfZzZIUHo2RWl0UWREWk9EUmJQZEh0MzFRSnljOFBRSHZjV2VTTlM5UkFKWlJJLWxBN2tueENkMF9mcENORkNOekx1X2F6Y1VQQlVpem0tYWc?oc=5",
+     "source": "The Guardian",
+     "published": "2026-07-03T01:30:00.000Z"
+    },
+    {
+     "title": "Dissent buzz in Punjab Congress after Manish Tewari's cryptic post on rejig. What is happening? | India News",
+     "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxOeVRKeHJfRUFGekFyWlNsRFNHb0FFLVRFS1loaXRhajdZTDY3VDNoTXdaWnRrTFhJTUhIXzVQNjBhenR4U0dkOWtXam9ROVZwbzFxS0I5WDNlZXJHY1VQMDVLTmd0djMzanFxTF92MlFITEo0VmlEYzJJVDVCQ0tITWlXVVhnWUpPdXkwLXRJU242QVhEWkM4UEhKTWxUVnFteEpRMy1xU0pnREl1ai02OFZlUjNIYVBUNjJqX2lIVW5QdHNlamFPTkVXb3JMd9IB0wFBVV95cUxOSkstaGRsWS1OLS1sV3E5OTNJUG8walZOd2toMF9NM2pxbXg4MFZuTnZFaTRTb2k3Q3VZOG9HSVYzRnhZdW8wRUszcUd5R2RKV2Q5emNlbllqTE1QMDFsSHlQOXA1Z0RCLTYtUFFKSGhfUlQ3N3VLbHRjaktNNlRsbmpJVkpFUHdNRU1Qb2JkdENHRXo1N29DeGNYc0phd1NhSVZaVjBnR2RuMHdhVUFiX1dfcml4ZnRGdTVUSkN2TDRVZTd1QV95UDdQV3dvMTZtSXRJ?oc=5",
+     "source": "Hindustan Times",
+     "published": "2026-07-03T01:24:58.000Z"
+    },
+    {
+     "title": "What a seating chart reveals about the future of China’s military leadership",
+     "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxNUkhVR3JyNmtLMk13OHlYeWFGbklIbkVLd0JrV2llSzQ1STZMTlVLdTVnQ2xaT1Z4NGM0Qm9HSGdPODNMVDhxM3BMc3h0bmY4U2tmQTdnbW9MYkJIQWxhV09MN3ZMMk03bVRSM3JnWlM3N29teUp3cVgzRFFZYXpEaEJPVHBseWFpdVl0cl9pNTM0dnlWa0NCOXpSVEJ5TjNkZVFfMGtVSHFjSFl1aGdoYS1oRGlUbFotbWhrbkJtX0VZZ2poSkM40gHHAUFVX3lxTE5fZld2NUtvWjh1aTZHWWlaM1I3bnJVY1hZSDdNYkdDYlU0dzFBNmlRdW55RktMYjZTSV9hV1pPRzhYYlhaYWhfYWt5R1otMFVkSDVnY3FiRFlDeEFTc3g4X2o2Qi1lNDJ5Y2JLc2hHM2dMcC10VXdDUlJpYjlDdElpT3JxZFdnejAyd0RwUDFxdEhIWmFRdmdXUkplRnBEMHo0cHdjN1hqYnE0aFhLaUgwZFRleWRlY0tVQ3ExT3VkTXNndTlTdGM?oc=5",
+     "source": "South China Morning Post",
+     "published": "2026-07-03T01:00:07.000Z"
+    }
+   ]
+  },
+  {
+   "id": "world",
+   "name": "World",
+   "articles": [
+    {
+     "title": "Long Lines for Gas Shatter the Illusion of Normalcy in Wartime Russia",
+     "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE9uY3dPYTQ3S3ZHTlFBc1dTcFQtUks2YjZXclVLZWFLNDZyeFppLVpIQnAzMG1CNVhkaXM3bEJXY3IybUlQT0MwYU1idnZQcjhwUEk3VmxzeTdhVHIwNlZoZkoyZDA2M1pWdThpQkE4ZVhFMTJ1R05JTnpFRmFVdw?oc=5",
+     "source": "The New York Times",
+     "published": "2026-07-03T09:02:04.000Z"
+    },
+    {
+     "title": "Powerful general appears in public as Iran prepares for Khamenei’s dayslong funeral",
+     "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxOQ3FKcmxXQ3lQTHVFQ1JpTTBFdnp5QmhyVXZaSVlSSHBZSUNIYkpRMmExRDJzcTFSRXF0TDdtbE1BV0xfMlNqLVpkMUFjVm1Za2xIRmRTa19CMkhRNU9zbGJqUzJ2SGs0cmNQakxTV3ktcFpueGdkZ0hEdU8tbWs0QnF5VUo3T3NveHYyNW5iSGRidmpURTBvVWR5QWlleU1KWFJCN3UzWjRvWnNsRURwYzhJUHZNT2w0dnp3?oc=5",
+     "source": "AP News",
+     "published": "2026-07-03T07:18:00.000Z"
+    },
+    {
+     "title": "Bomb blast at Damascus cafe kills nine, Syrian state media say",
+     "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFBLdjN1TFU3bElfbU83aUxySDEzMzR5Rll4eVRMRER3bHJqMVRvcGp1ek9KWXo5alUzNUNtdlFoYW5DVndPUzNscGZaYloycHRGMEtveW5ic2xUZw?oc=5",
+     "source": "BBC",
+     "published": "2026-07-03T06:42:14.000Z"
+    },
+    {
+     "title": "Australian officials ask fans to respect the privacy of Neil, a trouble-making seal",
+     "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTE1qVm9HbXRGUmhiV2xpQmZ2WVR0X0dIQkRNYk5KTko5NjNlREVJc0FqYjRhLW1GeFpRX0lncHZXUWxVbEpIZFpHUl9NdVY4NkxHNU1GajdueVRya2x6WXcyTjJqZ2p3QlM3aFFobUFhOE1nZWljSGRnbEtBR1c?oc=5",
+     "source": "NPR",
+     "published": "2026-07-03T06:39:51.000Z"
+    },
+    {
+     "title": "Police uncover international networks of men using online chat groups to drug and rape women",
+     "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxQVzlQNkp1NGU4VVhrMnlpbTlwdEd4cy1hclZuT2xnTHFmMUxLaER6UVNTc2M3al9zc1ZxQk1FZV83bUtDU2ZwMm1ydTB2NTRmZlhRVFA1OFFLYjdNR3NOdjRpNjRhZGJ4NXU2U180SExjME1wTDUxeDFUU3poN2gtcGFkN0I?oc=5",
+     "source": "CNN",
+     "published": "2026-07-03T05:54:30.000Z"
+    },
+    {
+     "title": "Trump says 'ridiculous' for US to maintain current support for NATO",
+     "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxNOWdGVm8zb29BV0VYVkFBYkloUlIyb1Q2ZEpmTUtfU2U0U0pFS2Q1M3gyWXI2a0szNUNmLW1xejhqUUt6eFpleUZFaFBlZ3dlMGw1ZVFaNkZyekR3UXVuMTRsSW1MZDlPTUV1SVZGYWVCYk92R3RtVUpFTTdnS1p4cmstd1F0R0txQmpwTjg0QmJQSi1DVzZHMW4tRGRzVm1udHJZVTR2MUFTa09faFRZbQ?oc=5",
+     "source": "Euronews",
+     "published": "2026-07-03T03:25:46.000Z"
+    },
+    {
+     "title": "EXCLUSIVE: Inside Taiwan's nightmare scenario: Chinese blockade, earthquake, sabotage and invasion",
+     "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxNX2tIVDBRWmhSV3BlZlQ1S1Nub0tyOVNaeDMzLS1ZZEF5UkxxMEVadWhQOUotYndyODdxbXJNcGJrekZaZ0hkcVVBdXZEY0VLRE5hdXdQQ2F3UGNmcWpQdXA5UmVBcjhxM3FkX2dLVGhLXzl2emVPOXBaaGJETTdra2dlbnJ2cm5XUDR2cFZXM2lfZmtodGswU2trRnZ3Qnd1WlRvRVJVWTgzNWFVRzYzb1NPdGttWktwY2RWZkFZZzkwQjRxbnc?oc=5",
+     "source": "Reuters",
+     "published": "2026-07-03T03:05:00.000Z"
+    },
+    {
+     "title": "Albanian police fire tear gas at 'Flamingo Revolution' rally",
+     "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxNaTA5ckZuRldFcWNvQUxLbE9MM19oRkxnLVRXT0JTdnktZG42LXlXTE8zOUdKUG9oblUzaFczRDFUbks1dEo3QVRXeTVaa1ZZNkNIejVYVkstN19RWVhHRlBMejNkRXU3d2ZwWVRsMFpjWnpCZ0ZfZHIySHhZaTJ5T1lOZktYNEg1YVlwWNIBjAFBVV95cUxNVm00N2VlZGR0dXBsRFNYc3hla251Y2R5S2oxeVdpY01SX2dSM2RBdWhCX3JWbF9raEs4Tl8zSGxrWHU2Tl9rRnJPM2lncTJkd2U3Z0dobUVmbVd5QlRUZTlpN0kxeGRQenJLbjBhc1VIOTRQODNDazRuckpuTlRETS14YTROaTBkN0ZhTQ?oc=5",
+     "source": "dw.com",
+     "published": "2026-07-03T00:45:41.000Z"
+    },
+    {
+     "title": "Couple publicly caned after alleged TikTok kiss sparks outrage in Indonesia",
+     "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxOaE16Zk1RZjA0QkFseERQV2hUX1VpSTF0VWUtUXFPeGV0cG41QUxzQ1NYZkVGdEkzVk9FdlBqeVVlQmN3N1BnNjFzWnVkZXhQWGpVaXQ0MmpZV0pUODVXdWdXdlZJWkhDTGljWGVnNGZTaXdtb1pIMnAtcllkWUdUNDkxY2FOOEFxQVctZ0ltbEl6ZmNhNUdsdW5hRGTSAaIBQVVfeXFMTi1ueVhhYjFnQnZEZDVBVlFBU2VYUGFBN1pIS0FEeWdiTlhuTkJXRVlXblRNMG16WTVHOXFZMnZLX004VzBWOUdoNDFuNm5yNGVZLU1YRjgzRjRMaUVDOW5OMXZRWGkxNmJUU3g1RS0tRVlqY2dweXBsRUxsY283eldUdTBQTUtmS2lUU0ozODhSRjRJNm1OcjhoTW5EcEdHT3lR?oc=5",
+     "source": "Fox News",
+     "published": "2026-07-03T00:31:39.000Z"
+    },
+    {
+     "title": "A blind woman bent down to kiss her guide dog goodnight, and the accident that followed restored her vision",
+     "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE9qZDBydENiYUU1Z0lzYmk3OUlsLW5TTDJJZmpQV1VrUDdxdWZSQTNMcXlLdm1jQWVDbS1mLVcxeFdrQ281VFo0TjJlQXppZGE3X2hBUm5jNnpQaFlqOWlPQ3ltZXd5XzlaYjBMazAwcG1SemJMY01R?oc=5",
+     "source": "Yahoo Lifestyle Singapore",
+     "published": "2026-07-02T23:26:50.000Z"
+    },
+    {
+     "title": "Iran warns oil tankers to use approved routes in Strait of Hormuz or face a ‘forceful response’",
+     "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxQOEM2Y1VRaV9hZEpMWVFYU05hd2FsQjlnbDI5S2FvVmlJNVVjQi1hbTVVTWthM251SFpNcEFsb1ZRX2NuNmo2S3UyUXF3NlkzcHJXTlFGRlotQzR3bDBHSngwcUNYckFDY3VnWUgtRXI5cW9qd0tvUGFjb19kdTVIRXlyU3RkY05neGtOeWRXWmZPdmF0QlQyOG9FdGcxVkxEOWc?oc=5",
+     "source": "AP News",
+     "published": "2026-07-02T22:44:00.000Z"
+    },
+    {
+     "title": "Europe's leaders close ranks as they face barbs and pressure from Trump",
+     "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxQRDBzTklBQnM5WEgyTDZaOGx2Q1hpd1JiRmJxZURpNW05WFpLQnpJSExiLUZmc09SaWM0RGNWLUZwTEtPN0FRNUZ1ekw0RTBUa1FQQVRZaTBjQ1VyOC1hMll6MFVacWVJOVplVll5cHBHaHk2V2QxWjBQeFp1WnJrZ184emt3VWNUcXVIVG1uNDBTeUVvVEl4ajgyS3JXTW9uSFJDYjRKV0fSAa4BQVVfeXFMUEVBcUFCazd0ajVVR1UtbUNjekN5cTBRWU1EWUNxQjAwaUxhY1otRTRROTluWnU0ZWQ2STdBSlE4TnFINk1PNXNvUlZNMkFOMHk5czNqTVJwOFlaZE5MeF9ZVjMtR2JVWTZNdDB4NkhfYVR5VFpLd2psLXFQZEI3Z3RKTHZHd0lURjRsQ1RQMW4tNF9DVDNGYlZvU29leUVtRjh6MmJSVUNNNV9MNlJB?oc=5",
+     "source": "PBS",
+     "published": "2026-07-02T21:37:12.000Z"
+    }
+   ]
+  },
+  {
+   "id": "tech",
+   "name": "Tech",
+   "articles": [
+    {
+     "title": "Apple Responds to Lawsuit Filed by Three YouTube Channels",
+     "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxPV3R6NkVOZmVGUnlIUUY0VlEtamRGcFJxMWVFSXE5ZUpSS19mQW5rNWtJR3JWUi05dUNwVnhYZl9DUW5PR2x1TjU1TVVoQXJrZzlFWkNpNmE3RDIxUlJORWpEeG93em5LU21iY3l0R0std2ZKRThLS1gyWm5LQURoMg?oc=5",
+     "source": "MacRumors",
+     "published": "2026-07-03T02:47:37.000Z"
+    },
+    {
+     "title": "Sony’s PlayStation disc factory is already being repurposed",
+     "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxORFdwQXVWeWNwTjMta1hObDVJMTZBd1VhWThGVnh3TVpreHVyR0dvWlRXZEgtbTBrcVJVeEg5UE5uRnU1Rl9qZjBNRDZTZ0R3R01NVm9PSmcxS1pNX1NUd2RBTXpEQ1RSdmx3clNoZGdvQXMycTdVdjM1dUdfb0ZRdnJ1S1RQRTlXZGpiX1dLUG00X21lS2JJZkZ5SU1SY3c?oc=5",
+     "source": "The Verge",
+     "published": "2026-07-03T01:05:00.000Z"
+    },
+    {
+     "title": "Splatoon Raiders Demo Now Available At Switch 2 Kiosks (North America)",
+     "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPNkJJQlJaNFlGb2pmei1MM0pVT0d3OXhKMGMtVzJJOVdDQ0JPeVRqRG9OZVhWLWpIOUZmdWlDc3ZabEFpTmNEOHFhM1pjcUNWOFV3b3BTbXdnMmREeG9vQmVuNlNfTmR1UEd5aGJYNXYtZXEtY0xiSTR4QnRhV0Jqd19WeGpLWkREQnM5dC1wQVRDUVJvNC12am9OZGk1dXFpcnpaSEY1U2NITjhFVUlV?oc=5",
+     "source": "Nintendo Life",
+     "published": "2026-07-02T23:45:00.000Z"
+    },
+    {
+     "title": "Sony Discusses Potential Future PlayStation Plus Price Hikes",
+     "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxQZWowWHNhWDV5RnRwc0RiUks2T3kzaHdxTWN4eTR1Zm9qYlhJTHUxdHZMMkJ6VmJfMS1iMkFCRWR1VGNWalJydFdDN2MyaFlOS1J6QmR6TE9uaFRzN2hkcWZmbmNlbWt6SmJVOFV6OXhoaWNtV1ZDenpQWFgyZjR2aHY2aHpKeGN6Rm9zTW14SEd2Zw?oc=5",
+     "source": "Insider Gaming",
+     "published": "2026-07-02T22:57:16.000Z"
+    },
+    {
+     "title": "iOS 27 helps apps detect when a user may be getting scammed in real time",
+     "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxNM2ZRWllGbDNHVVNjZHMtaUtoV0taa3U2SHY2TFZZSk1GM3loMHh3Q0RDQ25TWF81Sk9FOTdqejJkTUVMbmhNM0NYMzVSX3d3SXYweERLVEdpYnZpcnU4T29lMkdnVzVoelFjUnVURUY3S0ZadTR4S0pXMlVQUDNaRktMcWUxMUVZRU1YSkdfWkxlZ0o2bTQxdU83Sk9oeUQzazA0X0FaMA?oc=5",
+     "source": "9to5Mac",
+     "published": "2026-07-02T22:54:00.000Z"
+    },
+    {
+     "title": "'Grand Theft Auto 6' Video Game Sales Off To Strong Start",
+     "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxNYVFPZFJlbk1remgtc21zYklLRzhNNHV4S0U3ZkcyQnlEUTJUb0pmVHRwODFyZjlGMUNVMFV3NHpucTBPYlhBUDBKU2ZodjkxOXBtcU1wUHFYM3ZmSkotUzdlMG1HbXpqbnVaMFRTQm5oNUQzNld3elBQOFBlcS0tVlF5VjVWd3hLTkxyOFpR?oc=5",
+     "source": "Investor's Business Daily",
+     "published": "2026-07-02T20:11:00.000Z"
+    },
+    {
+     "title": "One Chart Shows Just How Unaffordable Playing The Next GTA Has Become",
+     "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxQcm8zUEEzajZVNVkxbTIyOGJnQ2UzRnk0ZGsycGM2YVJoV1BnYTF4eVlmYXlobW5DOC1zOHhYTkdxeWdUdUZhV0d1S2xKeHF1blEteVlCakRxcEZ5dkhoNHZUR1ludHhPVnlENHZmUURadk9hdlgzdGstZHFudGJIZjNoc0M2MU9QNE1hemE3aFdvM1hxQXRkdjdQZEQ5N09yWWRkM0dRNU5tUVZ3SUdMbzRsZjFpTVdyTWs0?oc=5",
+     "source": "Kotaku",
+     "published": "2026-07-02T19:30:15.000Z"
+    },
+    {
+     "title": "Apple's Foldable iPhone Push Gets Bigger",
+     "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxNSGZiTEdtMHdYY3hQd29KaS1CZ1dKelEtQlRJYm1FcTRYdWgyZkhZRVkxRnI0UmJBSEI1amE3TU9uZW5EMl9lNU50anU1U0FYQ3VoeE5CWVNhaFpCbE5Xb2x3VDAxbzk4ZV82dS1ydzdjNTQ2d21ORGtZVEhGdDRVWlJQS3E4Z3k1ekNiUzdaR3FCZjFBd2FnRA?oc=5",
+     "source": "Yahoo Finance",
+     "published": "2026-07-02T19:16:39.000Z"
+    },
+    {
+     "title": "Top ‘Suicide Squad’ Developers Say the Flop Made Them Not Want to Make Games Anymore",
+     "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxOaTJKVzM3MXE4SVhLZi1OTllmbm9lWlhJQnpfX212WU9yUExxVXQ1SGpubGpnckVoeUxPSFJsUjZEVXg0RkhCQlJjZ1BzV0tCa1p6bm9TTFFyQUl2bzdvcXBlRm9Gb19OV0RUVDYtNVRvaU15bkhSMEhjNjBhUTFpbi1acXA0c2ZrYTEteHMyclEtUExPUTBheC1ZYmR3ZFhnRC1DSUxhUFZHOEhrR2VrQ1hVNENxVFU3cnAwQndyMzhFLVdWemFObG9QZkE?oc=5",
+     "source": "Bloomberg.com",
+     "published": "2026-07-02T19:00:34.000Z"
+    },
+    {
+     "title": "iOS 27 Public Beta Available This Month, Here's How to Get Your iPhone Ready Now",
+     "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE1JR3BpNi10UDd4cWI5dFhFcnVOMi1lakozVlNTTFBnbTU3dUFHMUhEVHpfTVVCajllRUNaMzZHZjkxLTRVN3E2dDlmRmt1XzgzMmQ0SG9sQXFERUx1UUN3cWtrNjBrd2EwalExYmdfbGh1eno5QU40dA?oc=5",
+     "source": "MacRumors",
+     "published": "2026-07-02T18:51:01.000Z"
+    },
+    {
+     "title": "Galaxy S27 Pro and Ultra leak hints at a big shake-up for the selfie camera",
+     "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxNell3S2Zobk9STkJSWVFqeUlaYjhCWERkWVY4WDZyOWN6RTRCczZBRHJCWlE0eHg2bTFKQ3Rqdkl5R08yRW10bUhlWm5Db0dLekRlMS03VEhUeENGdXhjOUhhM0p4U0RBUWRYSFFGRUEyQ3MzMnZSOFBZYjZkaUJjUU9zcjMwNmNnOHRN?oc=5",
+     "source": "Android Authority",
+     "published": "2026-07-02T18:20:39.000Z"
+    },
+    {
+     "title": "Assassin’s Creed: Black Flag Resynced Launch Times And Preload Schedule Revealed",
+     "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPUXF2LXVXcWxpdkgxWWJCV1NTNjJkN1l3aXVkZjNWUExEamluczhmTG96bTFCSFlnS0h6ZUpsWWhDcW05TEJBWmtCaWlsQUFjeS10NlB1ZVpSNzNaODNqbXBkZEFLRVpYWVhuNVpvSnR4QWs0YWJubEY3bWpqTnFKSUp3dENTaGZYT3B1Y2xmTElJTDc1eTc3OW9SbGtxVUFITm0zV2tCdXF2Q2V6TWp0cUFBMA?oc=5",
+     "source": "GameSpot",
+     "published": "2026-07-02T18:14:03.000Z"
+    }
+   ]
+  },
+  {
+   "id": "business",
+   "name": "Business",
+   "articles": [
+    {
+     "title": "Best Fourth of July Deals Under $50 on Ninja, Anker and Samsung",
+     "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE5sclphaVdYUXhzVGI4WUVENEtYeHlrMmVHN1MzM0Z6c1ZXNnRldUt4cHpPeVZpbF93eFVXNWlPV0ZOQWZNalBrSExtVkFFV1JSY2hidm92c1FuTjZJR3FHQXB2aWhKMkhHYUhCM0M0Rmt0WVhW?oc=5",
+     "source": "cnet.com",
+     "published": "2026-07-03T09:12:22.000Z"
+    },
+    {
+     "title": "The AI Trade Is Losing One of Its Key Signals",
+     "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxPV29oaENnam4xVUgxbW5mQ3BsVUM1MjA0bmJub3BLQnFEQjNWS0ZQN25faXN1eC1JdUZJa3lFQnZBeU01LXFqR19YSzJCYUVSUnh1OXBSWGgzTlFPTGZtVUlSVC0wZTNtSHZUckhROHAzQ093SkZpSHpfTVM5NVk4dzR0X2dLVkVpT2s0TnI1ckRmM3dEanU0a2d5RlY0RUZQcm1aS1pjVU1STlMzOGc?oc=5",
+     "source": "Bloomberg.com",
+     "published": "2026-07-03T06:13:00.000Z"
+    },
+    {
+     "title": "California farmer and food marketer spar over who can sell white nectarines",
+     "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxQN21YakN0cGhhRWYtOXRaUFZhYmkwdlp2TWZVa1ItbVNsVkFndjZ0ZVdmTmE3TGZhbTF3dmxTSFJqYlEyY3hZeTFLaGF0TjVsRFNYVDlCNmtUUFNvRTM0bzB6R3FDX0RSZnZjV3dGYXdVUHA4VkZVMXZ0OHo3NU9JWlFJcHlYNmtHSFVkVF9JcGNCTWtu?oc=5",
+     "source": "Yahoo",
+     "published": "2026-07-03T04:43:00.000Z"
+    },
+    {
+     "title": "Trump administration moves to gut energy efficiency rules for home appliances",
+     "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxQOUZYT0tyWDR5U1p2Sm8tR1lXTHl2a2xEUkdZVVlpcU14ajY4OHlQcVFzSDhqX19MNWhSdkdDVTBETUpfaHBtZTRFUUU1XzFlNEFRUnBLc1VrM3Z0NnRJdy1lV3YxdkU1S0x3MjdheEM0dHRKS1FzWHpEUHRhREtxcGlvQ05rOVZtelZ5ekE1ZmRQNkE1eGVNVml4VXdrZlFnWGhxcEwwbUluUnRGSEtoX1hlN3R6SzY4LWlr?oc=5",
+     "source": "The Washington Post",
+     "published": "2026-07-03T04:39:29.000Z"
+    },
+    {
+     "title": "Canada unveils plans for new oil pipeline to break dependence on US",
+     "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE5tZXY2a1Ntd0syQjhLVEk4VmZWSnd5bFFBOHRlSjFqYWk5LUJhQXpzV2ZwelhXdTFocnB4X0RZek5vZ0hNdkRXZzZGMnBTdVVyZHZVb3p1bTYxelhCRnJUS2VCdE1Qc2N4cnMwMEVwdGc?oc=5",
+     "source": "Financial Times",
+     "published": "2026-07-03T01:57:04.000Z"
+    },
+    {
+     "title": "Driver charged with manslaughter after Tesla crashes into Texas home, kills grandmother",
+     "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxQV1ltSEZ4cWgyWmdZWnVLZkEwNVoxR0FQYThkNUZaNXY0eERaZE1UXzYzV20xcm84QnhoaWlSRF9UdnRDWWZWdHNKb3hydUpfZXlxSWVaeXdhZy1kT3FDel94YXZUNEpYbi04dVBPRmNVcnZ2NmJiZmFJMWQwZG4zYkk4cGgyYi1nOGVkVmJfcVJXSGJRWEVydkREUWxaZ9IBowFBVV95cUxPanM0TkQzbEJNWWItb2tXY3E3VDVQVUxMSFRNN2ctUnVmMzJ3azhHUHh0em00WlA3SjNOcWxYTEJJTnR0THNTNWZMZXZDb2ZRQnhhQnhGdC02ZnZJYnVfbUFCemNBcXRmcFNTU1RCV3otblE1bW92VzRaUUFrWFplVWRBcnNuSTFHNFNmSF83SHl5VVBSN0NaOHIzU0xTcUh6QWlZ?oc=5",
+     "source": "Fox News",
+     "published": "2026-07-03T01:50:24.000Z"
+    },
+    {
+     "title": "More than 100 passengers on US cruise ship sick from suspected norovirus",
+     "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNS3VtMGs0T3lBWTNCQUZyWWVXVG9uV3plMFk0RFUtYk9kSDdKclAzWEtpN1BJRDZKcWpmSmt5VGVMQWRLY1dPN091V0pNZ0NTSnBTVkdJM1RlaUFtZE9iUWxHWkdWdkRPR3F4RFZLNEphTTRONkNrbFYwUkk4UXZ5R0U1X0c?oc=5",
+     "source": "The Guardian",
+     "published": "2026-07-03T01:42:00.000Z"
+    },
+    {
+     "title": "Trump discloses 21,000 securities trades during first year in office",
+     "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxNRXRKN3Z0andHTXp5WjRNQ2xkUjcxS2tCeHpfdG9EeFRpaGM1Q2IxZFM4akNkQm5IZkt6NnEwRFNsNUQ2VUpYaXdaQW5LZEFsNC1OcHhKNWczS0QxSDZ6RE9qbGFieUdvaHpsNldGczhQa1hTQjF2aGZiSl9wcUhlaENId0I5VWx1cGJFZ1NCM0IyY2M2LWtKRkVDX3I4WDYz0gGmAUFVX3lxTE9Dc2ZEcnpkNmxPUVphbjRJcnBpaGNsM0EyVXlsQTFwdmg3TWZXekcxSUR0cGp3RWttdU5NMkRFVkZlV280MHV1V0RQOWtrTzlLQTlRQkE5eGpXaF9Yajh2NC1ITkdqSmhYcFY2ZFlLeE9nTjFKWUdKaG12WDlVTzl3VWIxeTdJRldpOFpsbEdXM29abG1KejFLLWdnWVBBVEtXSHdtU2c?oc=5",
+     "source": "ABC News - Breaking News, Latest News and Videos",
+     "published": "2026-07-03T01:03:41.000Z"
+    },
+    {
+     "title": "Claude Fable relaunch disappoints users with nerfed performance",
+     "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxQVG51WWkwS0hCd3RWSjhrX05TYVRxYkNvRVRJY2Jsa0JKZ0xTck43TnM5dnNRSzNoNlEyTzBKVFprZ2gyN2t5YmVNV296dFc0S1VHVmlKVGVvR2FsZHN3ZXhLZkJfaTRSOWdpTm5lb1FITGx3UzZJLTV2Y0xlaDZCZHFtWXZjZ2Q0Q1J0dVFKcEhpaUNQaExfOGliemVDeDB0VEN6bkFGei1sN1JuTEhsT0ZiWXN5VjY2ZHVRTDA1TTk1YnpY0gHKAUFVX3lxTE5rX2doTmhXTU95VjNaejcxeHZDREpGaF9wbmpwQTNGcFd3Y0NvSlhMLTdYRU16QnNveWVsQjlzNFBjQjIyUk16bDk1Tkd3d2tray1RcVhDTTd6TW43aWE5ZXZKeHhsUnhHeTBkcDdxOXotQW5RVWRGbFBTaWJ1M2NQazN6QXltdEhmaVB2N3lLQmpSODVZV0hxOTFXTnJ2Q0FVMk43b3RvQmx6eEtYU3ZDeFdjRDRQWGdaWkFyankxdXhWb3dDOTAxLVE?oc=5",
+     "source": "BleepingComputer",
+     "published": "2026-07-03T00:48:30.000Z"
+    },
+    {
+     "title": "Americans face major decision with mortgage rate news",
+     "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxNZ2FfdE1sSjFJSFRVdGh2NjdmNFBUZXJvSWF0WGtCZWtybW83U1dKVWlTajI2UTRfYmVBU1hsZnRIV0FrRHZnalVNdk4ycUlsQmwtbG1nT3V5bkRCc3hPMTFHX2FFR0VUbkdlWUwtOUVmbkVtU0kwRFhkdTE1V25Bb2pUeHRQSTdmYkRoZ3VKczVMZFNkdGc?oc=5",
+     "source": "thestreet.com",
+     "published": "2026-07-03T00:33:00.000Z"
+    },
+    {
+     "title": "NJ Transit is completely melting down, trains with no A/C. People stranded for hours.",
+     "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxNX3BqU0p5QVFZaHZ3czFQN2RaanoyQ1VlZC14VDRvNWcxQnZjR3hraGFMLUtMaWxVZ3VaZUpKMnFsRmlIVWs2dW9HdEhkQlA5R0xaYmstekJCbWgtOFdVNzBzZXUxOWVLWmZJYnFsVW1vZzMtTWViWTZFU0hrVGVVRk5kcXNFSWY4OFV2V0Y2X1Y3djlFUmJIR1NmM3Zad05BclVLSEtfam82SThpa3hwa1JJRzhnNFo4Mm5jbNIB0AFBVV95cUxQaENDLU96QW5CeE16UWlJeGZrMjJvQU0tdERXaW9td0YybzBuZEl1RGxWT2x6REZNRnRlU0wyX0RJMnhTT0RYNHI3NW5IbzVJRDYzTFhZRnJMWmV6T3RiWlB3R1JETlN3TlVmaU5HalJ0b0ZYNUFNeHVmY3VqaExEdTVyZW8yVGFqUXV1MGVjcWJKbWJ4UVV2VVQyWXE1cDdqREUxa2ptNVhZQ0l3RU1nWVp1ZXBObzl2RTJubjhRUEZiel8tN2dfR0JZMXltd3cz?oc=5",
+     "source": "NJ.com",
+     "published": "2026-07-03T00:24:00.000Z"
+    },
+    {
+     "title": "Dow jumps to record closing high after soft US jobs data, Nasdaq down with chip shares",
+     "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxQNmlSQU1CX2FPdk85U1ZHQjBSbHFXZDZ3VjUxNDg3THFOeUFyM0tiQURWczlyLUVxYm9QR0g5ZW5mcVA2bXVEc2QydjlQdkpfNHkxeTFzbXdxRkZVQ21lS2lXVVJQSktrWUVrY1pqUXdRN2VJdmpyWnRhT0ZncG1MT1RvZmpOcF9QcV91RXJ2SzBiQmpHd0ZHbkZNQzE?oc=5",
+     "source": "Reuters",
+     "published": "2026-07-02T23:11:39.000Z"
+    }
+   ]
+  }
+ ]
+}
