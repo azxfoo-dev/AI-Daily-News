@@ -30,9 +30,12 @@
   </main>
 
   <dialog id="customize-dialog" aria-labelledby="customize-title">
-    <h2 id="customize-title">Customize For You</h2>
-    <p class="dialog-hint">Pick the topics you want in your For You feed. Saved on this device.</p>
+    <h2 id="customize-title">Customize your news</h2>
+    <p class="dialog-hint">Saved on this device.</p>
     <form method="dialog" id="customize-form">
+      <h3 class="dialog-section">Sources</h3>
+      <div id="source-options" class="option-list"></div>
+      <h3 class="dialog-section">Topics for your For You feed</h3>
       <div id="customize-options" class="option-list"></div>
       <div class="dialog-actions">
         <button value="cancel" class="btn-secondary">Cancel</button>

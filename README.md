@@ -1,12 +1,16 @@
 # AI Daily News
 
-A personal news dashboard that shows the most recent headlines about **AI,
-politics, world events, tech, and business** — as an app window on your
-computer, on your phone's home screen, and on your iPhone lock screen.
+A personal news dashboard covering **politics, business, technology,
+health & science, sports, entertainment, world news, and lifestyle**, each
+with drill-down subtopics — as an app window on your computer, on your
+phone's home screen, and on your iPhone lock screen. A customizable
+**For You** feed sits at the top, and a source filter lets you choose
+**authoritative outlets** (via Google News), **public opinion** (Reddit
+communities), or both.
 
-Headlines are pulled from public Google News RSS feeds by a GitHub Actions
-job every 3 hours and published as a static page on GitHub Pages. There are
-no servers to run and no API keys to manage.
+Headlines are pulled by a GitHub Actions job every 3 hours and published as
+a static page on GitHub Pages. No servers to run; the only optional
+credential is a free Reddit API key for the public-opinion feeds (see below).
 
 **Live page:** https://azxfoo-dev.github.io/AI-Daily-News/
 
@@ -52,6 +56,23 @@ widget (small/medium/large).
 
 On Android, the installed web app's home-screen icon plus your launcher's
 widget tools (e.g. KWGT pointing at the same `news.json`) achieve the same.
+
+## Enabling the public-opinion (Reddit) feeds
+
+Reddit blocks anonymous requests from CI machines, so the workflow needs a
+free Reddit API app to fetch community posts:
+
+1. Log into Reddit, open https://www.reddit.com/prefs/apps, click
+   **create another app**, choose type **script**, name it anything, set
+   redirect URI to `http://localhost` and create it.
+2. Copy the **client id** (the string under the app name) and **secret**.
+3. In this repo: **Settings → Secrets and variables → Actions →
+   New repository secret**. Add `REDDIT_CLIENT_ID` and
+   `REDDIT_CLIENT_SECRET` with those values.
+4. Re-run the **Refresh news & deploy** workflow.
+
+Without these secrets everything else still works — the public-opinion
+checkbox just has no stories to show.
 
 ## Customizing topics
 

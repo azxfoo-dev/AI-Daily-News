@@ -35,6 +35,9 @@ jobs:
           enablement: true
 
       - name: Fetch latest headlines
+        env:
+          REDDIT_CLIENT_ID: ${{ secrets.REDDIT_CLIENT_ID }}
+          REDDIT_CLIENT_SECRET: ${{ secrets.REDDIT_CLIENT_SECRET }}
         run: |
           mkdir -p _site
           cp -r site/. _site/

@@ -13,8 +13,10 @@
 const PAGE_URL = "https://azxfoo-dev.github.io/AI-Daily-News/";
 const DATA_URL = PAGE_URL + "news.json";
 
-// Which categories to rotate through on the lock screen (in priority order).
-const LOCK_SCREEN_CATEGORIES = ["ai", "politics", "world"];
+// Which topics to rotate through on the lock screen (in priority order).
+// Topic ids come from scripts/feeds.json — e.g. "ai-ml", "us-politics",
+// "markets", "europe", "pro-sports", "movies-tv".
+const LOCK_SCREEN_CATEGORIES = ["ai-ml", "us-politics", "europe"];
 
 async function getNews() {
   const req = new Request(DATA_URL + "?t=" + Date.now());
@@ -22,9 +24,11 @@ async function getNews() {
 }
 
 function pickHeadlines(data, ids, count) {
+  // news.json groups topics under main categories; flatten to find by id.
+  const subs = (data.groups ?? []).flatMap((g) => g.subs ?? []);
   const chosen = [];
   for (const id of ids) {
-    const cat = data.categories.find((c) => c.id === id);
+    const cat = subs.find((s) => s.id === id);
     if (cat) chosen.push(...cat.articles.map((a) => ({ ...a, cat: cat.name })));
   }
   // Rotate the starting article every 15 minutes so the lock screen cycles.

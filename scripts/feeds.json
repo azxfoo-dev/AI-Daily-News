@@ -1,39 +1,364 @@
 {
-  "maxPerCategory": 12,
-  "categories": [
-    {
-      "id": "ai",
-      "name": "AI",
-      "feeds": [
-        "https://news.google.com/rss/search?q=%22artificial%20intelligence%22%20OR%20OpenAI%20OR%20Anthropic%20OR%20%22machine%20learning%22%20when%3A1d&hl=en-US&gl=US&ceid=US:en"
-      ]
-    },
+  "maxPerSubcategory": 8,
+  "groups": [
     {
       "id": "politics",
       "name": "Politics",
-      "feeds": [
-        "https://news.google.com/rss/headlines/section/topic/POLITICS?hl=en-US&gl=US&ceid=US:en"
-      ]
-    },
-    {
-      "id": "world",
-      "name": "World",
-      "feeds": [
-        "https://news.google.com/rss/headlines/section/topic/WORLD?hl=en-US&gl=US&ceid=US:en"
-      ]
-    },
-    {
-      "id": "tech",
-      "name": "Tech",
-      "feeds": [
-        "https://news.google.com/rss/headlines/section/topic/TECHNOLOGY?hl=en-US&gl=US&ceid=US:en"
+      "subs": [
+        {
+          "id": "us-politics",
+          "name": "US Politics & Elections",
+          "feeds": [
+            { "type": "authoritative", "url": "https://news.google.com/rss/search?q=%22US%20politics%22%20OR%20%22presidential%20election%22%20OR%20%22White%20House%22%20when%3A2d&hl=en-US&gl=US&ceid=US:en" },
+            { "type": "public", "url": "https://www.reddit.com/r/politics/top/.rss?t=day" }
+          ]
+        },
+        {
+          "id": "intl-politics",
+          "name": "International Politics & Wars",
+          "feeds": [
+            { "type": "authoritative", "url": "https://news.google.com/rss/search?q=geopolitics%20OR%20war%20OR%20%22military%20conflict%22%20OR%20sanctions%20when%3A2d&hl=en-US&gl=US&ceid=US:en" },
+            { "type": "public", "url": "https://www.reddit.com/r/geopolitics/top/.rss?t=day" }
+          ]
+        },
+        {
+          "id": "policy",
+          "name": "Policy & Legislation",
+          "feeds": [
+            { "type": "authoritative", "url": "https://news.google.com/rss/search?q=legislation%20OR%20%22new%20policy%22%20OR%20regulation%20OR%20%22executive%20order%22%20when%3A2d&hl=en-US&gl=US&ceid=US:en" },
+            { "type": "public", "url": "https://www.reddit.com/r/moderatepolitics/top/.rss?t=day" }
+          ]
+        },
+        {
+          "id": "congress",
+          "name": "Congress / Parliament",
+          "feeds": [
+            { "type": "authoritative", "url": "https://news.google.com/rss/search?q=Congress%20OR%20Senate%20OR%20%22House%20vote%22%20OR%20parliament%20when%3A2d&hl=en-US&gl=US&ceid=US:en" },
+            { "type": "public", "url": "https://www.reddit.com/r/NeutralPolitics/top/.rss?t=day" }
+          ]
+        }
       ]
     },
     {
       "id": "business",
       "name": "Business",
-      "feeds": [
-        "https://news.google.com/rss/headlines/section/topic/BUSINESS?hl=en-US&gl=US&ceid=US:en"
+      "subs": [
+        {
+          "id": "markets",
+          "name": "Markets & Stocks",
+          "feeds": [
+            { "type": "authoritative", "url": "https://news.google.com/rss/search?q=%22stock%20market%22%20OR%20%22S%26P%20500%22%20OR%20%22Wall%20Street%22%20OR%20Nasdaq%20when%3A1d&hl=en-US&gl=US&ceid=US:en" },
+            { "type": "public", "url": "https://www.reddit.com/r/stocks/top/.rss?t=day" }
+          ]
+        },
+        {
+          "id": "corporate",
+          "name": "Corporate News",
+          "feeds": [
+            { "type": "authoritative", "url": "https://news.google.com/rss/search?q=earnings%20OR%20merger%20OR%20acquisition%20OR%20CEO%20when%3A1d&hl=en-US&gl=US&ceid=US:en" },
+            { "type": "public", "url": "https://www.reddit.com/r/business/top/.rss?t=day" }
+          ]
+        },
+        {
+          "id": "startups",
+          "name": "Startups & Venture Capital",
+          "feeds": [
+            { "type": "authoritative", "url": "https://news.google.com/rss/search?q=startup%20OR%20%22venture%20capital%22%20OR%20%22funding%20round%22%20OR%20IPO%20when%3A2d&hl=en-US&gl=US&ceid=US:en" },
+            { "type": "public", "url": "https://www.reddit.com/r/startups/top/.rss?t=day" }
+          ]
+        },
+        {
+          "id": "economy",
+          "name": "Economy & Jobs",
+          "feeds": [
+            { "type": "authoritative", "url": "https://news.google.com/rss/search?q=economy%20OR%20inflation%20OR%20%22jobs%20report%22%20OR%20%22Federal%20Reserve%22%20when%3A2d&hl=en-US&gl=US&ceid=US:en" },
+            { "type": "public", "url": "https://www.reddit.com/r/Economics/top/.rss?t=day" }
+          ]
+        },
+        {
+          "id": "real-estate",
+          "name": "Real Estate",
+          "feeds": [
+            { "type": "authoritative", "url": "https://news.google.com/rss/search?q=%22real%20estate%22%20OR%20%22housing%20market%22%20OR%20%22mortgage%20rates%22%20when%3A2d&hl=en-US&gl=US&ceid=US:en" },
+            { "type": "public", "url": "https://www.reddit.com/r/RealEstate/top/.rss?t=day" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "tech",
+      "name": "Technology",
+      "subs": [
+        {
+          "id": "ai-ml",
+          "name": "AI & Machine Learning",
+          "feeds": [
+            { "type": "authoritative", "url": "https://news.google.com/rss/search?q=%22artificial%20intelligence%22%20OR%20OpenAI%20OR%20Anthropic%20OR%20%22machine%20learning%22%20when%3A1d&hl=en-US&gl=US&ceid=US:en" },
+            { "type": "public", "url": "https://www.reddit.com/r/artificial/top/.rss?t=day" }
+          ]
+        },
+        {
+          "id": "consumer-tech",
+          "name": "Consumer Tech / Gadgets",
+          "feeds": [
+            { "type": "authoritative", "url": "https://news.google.com/rss/search?q=smartphone%20OR%20gadget%20OR%20iPhone%20OR%20Android%20OR%20laptop%20when%3A2d&hl=en-US&gl=US&ceid=US:en" },
+            { "type": "public", "url": "https://www.reddit.com/r/gadgets/top/.rss?t=day" }
+          ]
+        },
+        {
+          "id": "cybersecurity",
+          "name": "Cybersecurity",
+          "feeds": [
+            { "type": "authoritative", "url": "https://news.google.com/rss/search?q=cybersecurity%20OR%20%22data%20breach%22%20OR%20ransomware%20OR%20hacking%20when%3A2d&hl=en-US&gl=US&ceid=US:en" },
+            { "type": "public", "url": "https://www.reddit.com/r/cybersecurity/top/.rss?t=day" }
+          ]
+        },
+        {
+          "id": "social-apps",
+          "name": "Social Media & Apps",
+          "feeds": [
+            { "type": "authoritative", "url": "https://news.google.com/rss/search?q=%22social%20media%22%20OR%20TikTok%20OR%20Instagram%20OR%20WhatsApp%20app%20when%3A2d&hl=en-US&gl=US&ceid=US:en" },
+            { "type": "public", "url": "https://www.reddit.com/r/technology/top/.rss?t=day" }
+          ]
+        },
+        {
+          "id": "tech-gaming",
+          "name": "Gaming",
+          "feeds": [
+            { "type": "authoritative", "url": "https://news.google.com/rss/search?q=%22video%20game%22%20OR%20PlayStation%20OR%20Xbox%20OR%20Nintendo%20OR%20Steam%20when%3A2d&hl=en-US&gl=US&ceid=US:en" },
+            { "type": "public", "url": "https://www.reddit.com/r/gaming/top/.rss?t=day" }
+          ]
+        },
+        {
+          "id": "ev-av",
+          "name": "EVs / Autonomous Driving",
+          "feeds": [
+            { "type": "authoritative", "url": "https://news.google.com/rss/search?q=%22electric%20vehicle%22%20OR%20Tesla%20OR%20%22self-driving%22%20OR%20%22autonomous%20driving%22%20when%3A2d&hl=en-US&gl=US&ceid=US:en" },
+            { "type": "public", "url": "https://www.reddit.com/r/electricvehicles/top/.rss?t=day" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "health-science",
+      "name": "Health & Science",
+      "subs": [
+        {
+          "id": "medical",
+          "name": "Medical Breakthroughs",
+          "feeds": [
+            { "type": "authoritative", "url": "https://news.google.com/rss/search?q=%22medical%20breakthrough%22%20OR%20%22clinical%20trial%22%20OR%20FDA%20OR%20%22new%20treatment%22%20when%3A2d&hl=en-US&gl=US&ceid=US:en" },
+            { "type": "public", "url": "https://www.reddit.com/r/medicine/top/.rss?t=day" }
+          ]
+        },
+        {
+          "id": "mental-health",
+          "name": "Mental Health",
+          "feeds": [
+            { "type": "authoritative", "url": "https://news.google.com/rss/search?q=%22mental%20health%22%20OR%20anxiety%20OR%20depression%20study%20when%3A7d&hl=en-US&gl=US&ceid=US:en" },
+            { "type": "public", "url": "https://www.reddit.com/r/psychology/top/.rss?t=day" }
+          ]
+        },
+        {
+          "id": "fitness",
+          "name": "Fitness & Wellness",
+          "feeds": [
+            { "type": "authoritative", "url": "https://news.google.com/rss/search?q=fitness%20OR%20nutrition%20OR%20wellness%20OR%20exercise%20study%20when%3A7d&hl=en-US&gl=US&ceid=US:en" },
+            { "type": "public", "url": "https://www.reddit.com/r/fitness/top/.rss?t=day" }
+          ]
+        },
+        {
+          "id": "space",
+          "name": "Space & Astronomy",
+          "feeds": [
+            { "type": "authoritative", "url": "https://news.google.com/rss/search?q=NASA%20OR%20SpaceX%20OR%20astronomy%20OR%20%22space%20mission%22%20when%3A2d&hl=en-US&gl=US&ceid=US:en" },
+            { "type": "public", "url": "https://www.reddit.com/r/space/top/.rss?t=day" }
+          ]
+        },
+        {
+          "id": "science",
+          "name": "General Science Research",
+          "feeds": [
+            { "type": "authoritative", "url": "https://news.google.com/rss/headlines/section/topic/SCIENCE?hl=en-US&gl=US&ceid=US:en" },
+            { "type": "public", "url": "https://www.reddit.com/r/science/top/.rss?t=day" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "sports",
+      "name": "Sports",
+      "subs": [
+        {
+          "id": "pro-sports",
+          "name": "NFL / Soccer / Basketball",
+          "feeds": [
+            { "type": "authoritative", "url": "https://news.google.com/rss/search?q=NFL%20OR%20NBA%20OR%20soccer%20OR%20%22Premier%20League%22%20OR%20MLB%20when%3A1d&hl=en-US&gl=US&ceid=US:en" },
+            { "type": "public", "url": "https://www.reddit.com/r/sports/top/.rss?t=day" }
+          ]
+        },
+        {
+          "id": "college-sports",
+          "name": "College Sports",
+          "feeds": [
+            { "type": "authoritative", "url": "https://news.google.com/rss/search?q=%22college%20football%22%20OR%20%22college%20basketball%22%20OR%20NCAA%20when%3A2d&hl=en-US&gl=US&ceid=US:en" },
+            { "type": "public", "url": "https://www.reddit.com/r/CFB/top/.rss?t=day" }
+          ]
+        },
+        {
+          "id": "olympics",
+          "name": "Olympics",
+          "feeds": [
+            { "type": "authoritative", "url": "https://news.google.com/rss/search?q=Olympics%20OR%20olympic%20when%3A7d&hl=en-US&gl=US&ceid=US:en" },
+            { "type": "public", "url": "https://www.reddit.com/r/olympics/top/.rss?t=week" }
+          ]
+        },
+        {
+          "id": "other-sports",
+          "name": "Other Sports",
+          "feeds": [
+            { "type": "authoritative", "url": "https://news.google.com/rss/search?q=tennis%20OR%20golf%20OR%20%22Formula%201%22%20OR%20NHL%20OR%20UFC%20when%3A1d&hl=en-US&gl=US&ceid=US:en" },
+            { "type": "public", "url": "https://www.reddit.com/r/formula1/top/.rss?t=day" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "entertainment",
+      "name": "Entertainment",
+      "subs": [
+        {
+          "id": "movies-tv",
+          "name": "Movies & TV Shows",
+          "feeds": [
+            { "type": "authoritative", "url": "https://news.google.com/rss/search?q=movie%20OR%20%22TV%20series%22%20OR%20Netflix%20OR%20%22box%20office%22%20when%3A2d&hl=en-US&gl=US&ceid=US:en" },
+            { "type": "public", "url": "https://www.reddit.com/r/movies/top/.rss?t=day" }
+          ]
+        },
+        {
+          "id": "music",
+          "name": "Music & Concerts",
+          "feeds": [
+            { "type": "authoritative", "url": "https://news.google.com/rss/search?q=music%20album%20OR%20concert%20OR%20%22tour%20dates%22%20OR%20Billboard%20when%3A2d&hl=en-US&gl=US&ceid=US:en" },
+            { "type": "public", "url": "https://www.reddit.com/r/Music/top/.rss?t=day" }
+          ]
+        },
+        {
+          "id": "celebrity",
+          "name": "Celebrity News",
+          "feeds": [
+            { "type": "authoritative", "url": "https://news.google.com/rss/search?q=celebrity%20when%3A1d&hl=en-US&gl=US&ceid=US:en" },
+            { "type": "public", "url": "https://www.reddit.com/r/popculturechat/top/.rss?t=day" }
+          ]
+        },
+        {
+          "id": "ent-gaming",
+          "name": "Gaming",
+          "feeds": [
+            { "type": "authoritative", "url": "https://news.google.com/rss/search?q=%22game%20release%22%20OR%20%22gaming%20industry%22%20OR%20esports%20when%3A2d&hl=en-US&gl=US&ceid=US:en" },
+            { "type": "public", "url": "https://www.reddit.com/r/Games/top/.rss?t=day" }
+          ]
+        },
+        {
+          "id": "awards",
+          "name": "Awards & Events",
+          "feeds": [
+            { "type": "authoritative", "url": "https://news.google.com/rss/search?q=%22award%20show%22%20OR%20Oscars%20OR%20Grammys%20OR%20Emmys%20OR%20%22film%20festival%22%20when%3A7d&hl=en-US&gl=US&ceid=US:en" },
+            { "type": "public", "url": "https://www.reddit.com/r/entertainment/top/.rss?t=day" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "world",
+      "name": "World",
+      "subs": [
+        {
+          "id": "europe",
+          "name": "Europe",
+          "feeds": [
+            { "type": "authoritative", "url": "https://news.google.com/rss/search?q=Europe%20OR%20EU%20OR%20Ukraine%20OR%20UK%20when%3A1d&hl=en-US&gl=US&ceid=US:en" },
+            { "type": "public", "url": "https://www.reddit.com/r/europe/top/.rss?t=day" }
+          ]
+        },
+        {
+          "id": "asia-pacific",
+          "name": "Asia Pacific",
+          "feeds": [
+            { "type": "authoritative", "url": "https://news.google.com/rss/search?q=China%20OR%20Japan%20OR%20India%20OR%20%22Asia%20Pacific%22%20when%3A1d&hl=en-US&gl=US&ceid=US:en" },
+            { "type": "public", "url": "https://www.reddit.com/r/worldnews/top/.rss?t=day" }
+          ]
+        },
+        {
+          "id": "mena",
+          "name": "Middle East & Africa",
+          "feeds": [
+            { "type": "authoritative", "url": "https://news.google.com/rss/search?q=%22Middle%20East%22%20OR%20Africa%20OR%20Israel%20OR%20Iran%20when%3A1d&hl=en-US&gl=US&ceid=US:en" },
+            { "type": "public", "url": "https://www.reddit.com/r/anime_titties/top/.rss?t=day" }
+          ]
+        },
+        {
+          "id": "latam",
+          "name": "Latin America",
+          "feeds": [
+            { "type": "authoritative", "url": "https://news.google.com/rss/search?q=%22Latin%20America%22%20OR%20Brazil%20OR%20Mexico%20OR%20Argentina%20when%3A2d&hl=en-US&gl=US&ceid=US:en" },
+            { "type": "public", "url": "https://www.reddit.com/r/worldnews/top/.rss?t=day" }
+          ]
+        },
+        {
+          "id": "us-canada",
+          "name": "Canada / US",
+          "feeds": [
+            { "type": "authoritative", "url": "https://news.google.com/rss/headlines/section/topic/NATION?hl=en-US&gl=US&ceid=US:en" },
+            { "type": "public", "url": "https://www.reddit.com/r/news/top/.rss?t=day" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "lifestyle",
+      "name": "Lifestyle",
+      "subs": [
+        {
+          "id": "food",
+          "name": "Food & Dining",
+          "feeds": [
+            { "type": "authoritative", "url": "https://news.google.com/rss/search?q=restaurant%20OR%20dining%20OR%20recipe%20OR%20chef%20when%3A7d&hl=en-US&gl=US&ceid=US:en" },
+            { "type": "public", "url": "https://www.reddit.com/r/food/top/.rss?t=day" }
+          ]
+        },
+        {
+          "id": "travel",
+          "name": "Travel",
+          "feeds": [
+            { "type": "authoritative", "url": "https://news.google.com/rss/search?q=travel%20OR%20airline%20OR%20tourism%20when%3A2d&hl=en-US&gl=US&ceid=US:en" },
+            { "type": "public", "url": "https://www.reddit.com/r/travel/top/.rss?t=day" }
+          ]
+        },
+        {
+          "id": "home-design",
+          "name": "Home & Design",
+          "feeds": [
+            { "type": "authoritative", "url": "https://news.google.com/rss/search?q=%22interior%20design%22%20OR%20%22home%20design%22%20OR%20architecture%20when%3A7d&hl=en-US&gl=US&ceid=US:en" },
+            { "type": "public", "url": "https://www.reddit.com/r/InteriorDesign/top/.rss?t=week" }
+          ]
+        },
+        {
+          "id": "fashion",
+          "name": "Fashion & Style",
+          "feeds": [
+            { "type": "authoritative", "url": "https://news.google.com/rss/search?q=fashion%20OR%20style%20OR%20designer%20brand%20when%3A2d&hl=en-US&gl=US&ceid=US:en" },
+            { "type": "public", "url": "https://www.reddit.com/r/femalefashionadvice/top/.rss?t=day" }
+          ]
+        },
+        {
+          "id": "relationships",
+          "name": "Relationships & Family",
+          "feeds": [
+            { "type": "authoritative", "url": "https://news.google.com/rss/search?q=parenting%20OR%20relationships%20OR%20family%20study%20when%3A7d&hl=en-US&gl=US&ceid=US:en" },
+            { "type": "public", "url": "https://www.reddit.com/r/Parenting/top/.rss?t=day" }
+          ]
+        }
       ]
     }
   ]
