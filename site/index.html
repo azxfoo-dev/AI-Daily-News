@@ -29,6 +29,18 @@
     <p class="status" id="status">Loading headlines…</p>
   </main>
 
+  <dialog id="customize-dialog" aria-labelledby="customize-title">
+    <h2 id="customize-title">Customize For You</h2>
+    <p class="dialog-hint">Pick the topics you want in your For You feed. Saved on this device.</p>
+    <form method="dialog" id="customize-form">
+      <div id="customize-options" class="option-list"></div>
+      <div class="dialog-actions">
+        <button value="cancel" class="btn-secondary">Cancel</button>
+        <button value="save" class="btn-primary" id="customize-save">Save</button>
+      </div>
+    </form>
+  </dialog>
+
   <footer>
     <p>Aggregated from public RSS feeds. Refreshes automatically.</p>
   </footer>

@@ -2,6 +2,8 @@
    renders category tabs + headline cards, and refreshes itself periodically. */
 
 const REFRESH_INTERVAL_MS = 15 * 60 * 1000;
+const FOR_YOU_KEY = "forYouCategories";
+const FOR_YOU_COUNT = 8;
 
 const state = { data: null, tab: "all" };
 
@@ -9,6 +11,26 @@ const $feed = document.getElementById("feed");
 const $tabs = document.getElementById("tabs");
 const $updated = document.getElementById("updated");
 const $refresh = document.getElementById("refresh");
+const $dialog = document.getElementById("customize-dialog");
+const $options = document.getElementById("customize-options");
+
+// null = never customized; [] = customized but nothing picked
+function getForYouPrefs() {
+  try {
+    const raw = localStorage.getItem(FOR_YOU_KEY);
+    return raw ? JSON.parse(raw) : null;
+  } catch {
+    return null;
+  }
+}
+
+function setForYouPrefs(ids) {
+  try {
+    localStorage.setItem(FOR_YOU_KEY, JSON.stringify(ids));
+  } catch {
+    /* private browsing — prefs just won't persist */
+  }
+}
 
 function relTime(iso) {
   if (!iso) return "";
@@ -39,7 +61,7 @@ function renderTabs() {
   );
 }
 
-function articleCard(a) {
+function articleCard(a, { showCategory = false } = {}) {
   const li = document.createElement("li");
   li.className = "card";
   const link = document.createElement("a");
@@ -51,6 +73,12 @@ function articleCard(a) {
   h.textContent = a.title;
   const by = document.createElement("p");
   by.className = "byline";
+  if (showCategory && a.catName) {
+    const c = document.createElement("span");
+    c.className = "cat-badge";
+    c.textContent = a.catName;
+    by.append(c);
+  }
   if (a.source) {
     const s = document.createElement("span");
     s.className = "source";
@@ -65,6 +93,86 @@ function articleCard(a) {
   return li;
 }
 
+function forYouArticles(prefs) {
+  // Round-robin across the chosen categories (newest first within each) so
+  // one very active feed can't crowd the others out of For You.
+  const queues = state.data.categories
+    .filter((c) => prefs.includes(c.id))
+    .map((c) => c.articles.map((a) => ({ ...a, catName: c.name })));
+  const seen = new Set();
+  const mixed = [];
+  for (let i = 0; mixed.length < FOR_YOU_COUNT; i++) {
+    const round = queues.map((q) => q[i]).filter(Boolean);
+    if (!round.length) break;
+    round.sort((a, b) => (b.published ?? "").localeCompare(a.published ?? ""));
+    for (const a of round) {
+      const key = a.title.toLowerCase();
+      if (seen.has(key)) continue;
+      seen.add(key);
+      mixed.push(a);
+    }
+  }
+  return mixed.slice(0, FOR_YOU_COUNT);
+}
+
+function openCustomize() {
+  const prefs = getForYouPrefs() ?? [];
+  $options.replaceChildren(
+    ...state.data.categories.map((c) => {
+      const label = document.createElement("label");
+      label.className = "option";
+      const box = document.createElement("input");
+      box.type = "checkbox";
+      box.value = c.id;
+      box.checked = prefs.includes(c.id);
+      const span = document.createElement("span");
+      span.textContent = c.name;
+      label.append(box, span);
+      return label;
+    })
+  );
+  $dialog.showModal();
+}
+
+$dialog.addEventListener("close", () => {
+  if ($dialog.returnValue !== "save") return;
+  const picked = [...$options.querySelectorAll("input:checked")].map((b) => b.value);
+  setForYouPrefs(picked);
+  renderFeed();
+});
+
+function renderForYou(frag) {
+  const prefs = getForYouPrefs();
+
+  const head = document.createElement("div");
+  head.className = "foryou-head";
+  const h2 = document.createElement("h2");
+  h2.className = "section-title foryou-title";
+  h2.textContent = "★ For You";
+  const btn = document.createElement("button");
+  btn.className = "customize-btn";
+  btn.textContent = prefs === null ? "Choose topics" : "Customize";
+  btn.addEventListener("click", openCustomize);
+  head.append(h2, btn);
+  frag.append(head);
+
+  if (prefs === null || prefs.length === 0) {
+    const p = document.createElement("p");
+    p.className = "foryou-empty";
+    p.textContent =
+      prefs === null
+        ? "Pick the topics you care about and your personal feed will appear here."
+        : "No topics selected — tap Customize to pick some.";
+    frag.append(p);
+    return;
+  }
+
+  const ul = document.createElement("ul");
+  ul.className = "card-list";
+  ul.append(...forYouArticles(prefs).map((a) => articleCard(a, { showCategory: true })));
+  frag.append(ul);
+}
+
 function renderFeed() {
   const cats =
     state.tab === "all"
@@ -72,6 +180,7 @@ function renderFeed() {
       : state.data.categories.filter((c) => c.id === state.tab);
 
   const frag = document.createDocumentFragment();
+  if (state.tab === "all") renderForYou(frag);
   for (const cat of cats) {
     if (!cat.articles.length) continue;
     if (state.tab === "all") {
