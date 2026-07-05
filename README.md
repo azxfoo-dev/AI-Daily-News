@@ -54,6 +54,17 @@ The widget shows the latest headline, cycles every 15 minutes, and tapping
 it opens the full news page. The same script also works as a home-screen
 widget (small/medium/large).
 
+## iPhone midnight headline notification
+
+The web app can only notify while it's open, so for a true midnight
+notification install
+[`ios-widget/AI-Daily-News-Notify.js`](ios-widget/AI-Daily-News-Notify.js)
+as a second Scriptable script, then in the **Shortcuts** app add an
+Automation: **Time of Day → 12:00 AM, Daily → Run Script (Scriptable) →
+AI Daily News Notify**, with "Ask Before Running" off. Every midnight your
+phone shows the day's top story from your chosen topics; tapping it opens
+the news page.
+
 On Android, the installed web app's home-screen icon plus your launcher's
 widget tools (e.g. KWGT pointing at the same `news.json`) achieve the same.
 

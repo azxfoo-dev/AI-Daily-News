@@ -19,6 +19,7 @@
     <h1><span class="logo" aria-hidden="true"></span>AI Daily News</h1>
     <div class="meta">
       <span id="updated" title="When the headlines were last refreshed"></span>
+      <button id="briefing-open" title="Open your daily briefing" aria-label="Open daily briefing">&#x2600;</button>
       <button id="refresh" title="Refresh now" aria-label="Refresh headlines">&#x21bb;</button>
     </div>
   </header>
@@ -29,6 +30,16 @@
     <p class="status" id="status">Loading headlines…</p>
   </main>
 
+  <div id="briefing" class="briefing" hidden role="dialog" aria-modal="true" aria-labelledby="briefing-title">
+    <div class="briefing-inner">
+      <button id="briefing-close" class="briefing-close" aria-label="Close briefing">&#x2715;</button>
+      <p class="briefing-date" id="briefing-date"></p>
+      <h2 id="briefing-title">Your Daily Briefing</h2>
+      <p class="briefing-sub" id="briefing-sub"></p>
+      <div id="briefing-body"></div>
+    </div>
+  </div>
+
   <dialog id="customize-dialog" aria-labelledby="customize-title">
     <h2 id="customize-title">Customize your news</h2>
     <p class="dialog-hint">Saved on this device.</p>
@@ -37,6 +48,13 @@
       <div id="source-options" class="option-list"></div>
       <h3 class="dialog-section">Topics for your For You feed</h3>
       <div id="customize-options" class="option-list"></div>
+      <h3 class="dialog-section">Card size</h3>
+      <div id="density-options" class="option-list density-row"></div>
+      <h3 class="dialog-section">Daily features</h3>
+      <div class="option-list">
+        <label class="option"><input type="checkbox" id="opt-briefing"><span><strong>Daily briefing</strong><small> — full-screen summary when you open the app (once a day)</small></span></label>
+        <label class="option"><input type="checkbox" id="opt-notify"><span><strong>Headline notification</strong><small> — top story at midnight while the app is open, or on your first visit of the day</small></span></label>
+      </div>
       <div class="dialog-actions">
         <button value="cancel" class="btn-secondary">Cancel</button>
         <button value="save" class="btn-primary" id="customize-save">Save</button>

@@ -5,8 +5,19 @@
 const REFRESH_INTERVAL_MS = 15 * 60 * 1000;
 const FOR_YOU_KEY = "forYouCategories";
 const SOURCES_KEY = "sourceTypes";
+const DENSITY_KEY = "cardDensity";
+const BRIEFING_ON_KEY = "briefingEnabled";
+const NOTIFY_ON_KEY = "notifyEnabled";
+const BRIEFING_DAY_KEY = "briefingShownDay";
+const NOTIFY_DAY_KEY = "notifiedDay";
 const FOR_YOU_COUNT = 8;
+const BRIEFING_COUNT = 12;
 const PER_SECTION = 5;
+const DENSITIES = [
+  { id: "compact", name: "Compact" },
+  { id: "cozy", name: "Cozy" },
+  { id: "spacious", name: "Spacious" },
+];
 
 const state = { data: null, tab: "all", sub: "all" };
 
@@ -17,6 +28,10 @@ const $refresh = document.getElementById("refresh");
 const $dialog = document.getElementById("customize-dialog");
 const $options = document.getElementById("customize-options");
 const $sources = document.getElementById("source-options");
+const $density = document.getElementById("density-options");
+const $optBriefing = document.getElementById("opt-briefing");
+const $optNotify = document.getElementById("opt-notify");
+const $briefing = document.getElementById("briefing");
 
 /* ---------- preferences ---------- */
 
@@ -59,6 +74,19 @@ function bySources(articles) {
   const wanted = getSourcePrefs();
   return articles.filter((a) => wanted.includes(a.sourceType ?? "authoritative"));
 }
+
+function getDensity() {
+  const d = readPref(DENSITY_KEY);
+  return DENSITIES.some((x) => x.id === d) ? d : "cozy";
+}
+
+function applyDensity() {
+  document.body.dataset.density = getDensity();
+}
+
+const briefingEnabled = () => readPref(BRIEFING_ON_KEY) !== false; // default on
+const notifyEnabled = () => readPref(NOTIFY_ON_KEY) === true; // default off
+const todayStamp = () => new Date().toISOString().slice(0, 10);
 
 /* ---------- rendering ---------- */
 
@@ -250,6 +278,26 @@ function openCustomize() {
   const prefs = getForYouPrefs() ?? [];
   const sources = getSourcePrefs();
 
+  const density = getDensity();
+  $density.replaceChildren(
+    ...DENSITIES.map((d) => {
+      const label = document.createElement("label");
+      label.className = "option density-option";
+      const radio = document.createElement("input");
+      radio.type = "radio";
+      radio.name = "density";
+      radio.value = d.id;
+      radio.checked = d.id === density;
+      const span = document.createElement("span");
+      span.textContent = d.name;
+      label.append(radio, span);
+      return label;
+    })
+  );
+
+  $optBriefing.checked = briefingEnabled();
+  $optNotify.checked = notifyEnabled() && ("Notification" in window) && Notification.permission === "granted";
+
   $sources.replaceChildren(
     sourceCheckbox("authoritative", "Authoritative", "major news outlets", sources.includes("authoritative")),
     sourceCheckbox("public", "Public opinion", "Reddit community posts", sources.includes("public"))
@@ -305,13 +353,33 @@ function openCustomize() {
   $dialog.showModal();
 }
 
+// Ask for notification permission the moment the toggle is switched on, so
+// the browser prompt appears in response to a user gesture.
+$optNotify.addEventListener("change", async () => {
+  if (!$optNotify.checked) return;
+  if (!("Notification" in window)) {
+    $optNotify.checked = false;
+    return;
+  }
+  if (Notification.permission !== "granted") {
+    const perm = await Notification.requestPermission();
+    if (perm !== "granted") $optNotify.checked = false;
+  }
+});
+
 $dialog.addEventListener("close", () => {
   if ($dialog.returnValue !== "save") return;
   const picked = [...$options.querySelectorAll("input[value]:checked")].map((b) => b.value);
   writePref(FOR_YOU_KEY, picked);
   const sources = [...$sources.querySelectorAll("input:checked")].map((b) => b.value);
   writePref(SOURCES_KEY, sources.length ? sources : ["authoritative", "public"]);
+  const density = $density.querySelector("input:checked");
+  if (density) writePref(DENSITY_KEY, density.value);
+  writePref(BRIEFING_ON_KEY, $optBriefing.checked);
+  writePref(NOTIFY_ON_KEY, $optNotify.checked);
+  applyDensity();
   renderFeed();
+  maybeNotify();
 });
 
 /* ---------- main feed ---------- */
@@ -376,6 +444,110 @@ function renderFeed() {
   $updated.textContent = `Updated ${relTime(state.data.updated)}`;
 }
 
+/* ---------- daily briefing ---------- */
+
+function briefingArticles() {
+  const prefs = getForYouPrefs();
+  return prefs && prefs.length ? briefingMix(prefs) : mergeNewest(allSubs(), BRIEFING_COUNT);
+}
+
+function briefingMix(prefs) {
+  // Same round-robin as For You but with the larger briefing count.
+  const queues = allSubs()
+    .filter((s) => prefs.includes(s.id))
+    .map((s) => bySources(s.articles).map((a) => ({ ...a, subName: s.name })));
+  const seen = new Set();
+  const mixed = [];
+  for (let i = 0; mixed.length < BRIEFING_COUNT; i++) {
+    const round = queues.map((q) => q[i]).filter(Boolean);
+    if (!round.length) break;
+    round.sort((a, b) => (b.published ?? "").localeCompare(a.published ?? ""));
+    for (const a of round) {
+      const key = a.title.toLowerCase();
+      if (!seen.has(key)) {
+        seen.add(key);
+        mixed.push(a);
+      }
+    }
+  }
+  return mixed.slice(0, BRIEFING_COUNT);
+}
+
+function showBriefing() {
+  const prefs = getForYouPrefs();
+  const articles = briefingArticles();
+  document.getElementById("briefing-date").textContent = new Date().toLocaleDateString(undefined, {
+    weekday: "long",
+    month: "long",
+    day: "numeric",
+  });
+  document.getElementById("briefing-sub").textContent =
+    prefs && prefs.length
+      ? "The latest from your topics."
+      : "Top stories right now — pick topics in Customize to personalize this.";
+  const body = document.getElementById("briefing-body");
+  const ul = document.createElement("ul");
+  ul.className = "card-list";
+  ul.append(...articles.map((a) => articleCard(a, { badge: a.subName })));
+  body.replaceChildren(
+    articles.length ? ul : emptyNote("Nothing to show yet — check your topic and source settings.")
+  );
+  $briefing.hidden = false;
+  document.body.classList.add("no-scroll");
+  document.getElementById("briefing-close").focus();
+}
+
+function hideBriefing() {
+  $briefing.hidden = true;
+  document.body.classList.remove("no-scroll");
+}
+
+document.getElementById("briefing-close").addEventListener("click", hideBriefing);
+document.getElementById("briefing-open").addEventListener("click", () => {
+  if (state.data) showBriefing();
+});
+document.addEventListener("keydown", (e) => {
+  if (e.key === "Escape" && !$briefing.hidden) hideBriefing();
+});
+
+function maybeAutoBriefing() {
+  if (!briefingEnabled()) return;
+  if (readPref(BRIEFING_DAY_KEY) === todayStamp()) return;
+  writePref(BRIEFING_DAY_KEY, todayStamp());
+  showBriefing();
+}
+
+/* ---------- daily headline notification ---------- */
+
+function topHeadline() {
+  const prefs = getForYouPrefs();
+  const list = prefs && prefs.length ? briefingMix(prefs) : mergeNewest(allSubs(), 1);
+  return list[0] ?? null;
+}
+
+function maybeNotify() {
+  if (!state.data || !notifyEnabled()) return;
+  if (!("Notification" in window) || Notification.permission !== "granted") return;
+  if (readPref(NOTIFY_DAY_KEY) === todayStamp()) return;
+  const top = topHeadline();
+  if (!top) return;
+  writePref(NOTIFY_DAY_KEY, todayStamp());
+  const n = new Notification("AI Daily News — today's top story", {
+    body: top.title + (top.source ? ` (${top.source})` : ""),
+    icon: "icons/icon-192.png",
+    tag: "daily-headline",
+  });
+  n.addEventListener("click", () => {
+    window.focus();
+    showBriefing();
+    n.close();
+  });
+}
+
+// Fires right at midnight while the app is open (the day stamp changes),
+// and otherwise on the first visit of the day.
+setInterval(maybeNotify, 30 * 1000);
+
 /* ---------- data loading ---------- */
 
 async function load({ spin = false } = {}) {
@@ -383,9 +555,14 @@ async function load({ spin = false } = {}) {
   try {
     const res = await fetch(`news.json?t=${Date.now()}`, { cache: "no-store" });
     if (!res.ok) throw new Error(`HTTP ${res.status}`);
+    const firstLoad = !state.data;
     state.data = await res.json();
     renderTabs();
     renderFeed();
+    if (firstLoad) {
+      maybeAutoBriefing();
+      maybeNotify();
+    }
   } catch (err) {
     if (!state.data) {
       document.getElementById("status").textContent =
@@ -397,6 +574,7 @@ async function load({ spin = false } = {}) {
   }
 }
 
+applyDensity();
 $refresh.addEventListener("click", () => load({ spin: true }));
 document.addEventListener("visibilitychange", () => {
   if (!document.hidden) load();

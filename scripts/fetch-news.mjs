@@ -162,7 +162,7 @@ async function fetchThrottledRss(url) {
   return turn;
 }
 
-async function fetchFeed({ url, type }) {
+async function fetchFeed({ url, type, label }) {
   const isReddit = /reddit\.com/i.test(url);
   if (isReddit && process.env.REDDIT_CLIENT_ID && process.env.REDDIT_CLIENT_SECRET) {
     return fetchRedditApi(url, type);
@@ -173,7 +173,7 @@ async function fetchFeed({ url, type }) {
   const items = /<feed[\s>]/i.test(xml.slice(0, 2000))
     ? parseAtomEntries(xml, url)
     : parseRssItems(xml);
-  return items.map((a) => ({ ...a, sourceType: type }));
+  return items.map((a) => ({ ...a, source: a.source ?? label ?? null, sourceType: type }));
 }
 
 async function mapLimit(jobs, limit, fn) {

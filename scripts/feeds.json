@@ -98,6 +98,16 @@
           ]
         },
         {
+          "id": "ai-insights",
+          "name": "AI Insights & Research",
+          "feeds": [
+            { "type": "authoritative", "url": "https://www.technologyreview.com/topic/artificial-intelligence/feed", "label": "MIT Technology Review" },
+            { "type": "authoritative", "url": "https://venturebeat.com/category/ai/feed/", "label": "VentureBeat" },
+            { "type": "authoritative", "url": "https://news.google.com/rss/search?q=%22AI%20research%22%20OR%20%22AI%20breakthrough%22%20OR%20%22new%20AI%20model%22%20OR%20%22AI%20study%22%20when%3A2d&hl=en-US&gl=US&ceid=US:en" },
+            { "type": "public", "url": "https://www.reddit.com/r/singularity/top/.rss?t=day" }
+          ]
+        },
+        {
           "id": "consumer-tech",
           "name": "Consumer Tech / Gadgets",
           "feeds": [
