@@ -1,0 +1,82 @@
+name: Email digest
+
+on:
+  schedule:
+    - cron: "0 12 * * *" # daily at 12:00 UTC (edit to shift the send time)
+  workflow_dispatch:
+    inputs:
+      frequency:
+        description: "Which digest to send"
+        type: choice
+        options: [daily, weekly, both]
+        default: daily
+
+permissions:
+  contents: read
+
+jobs:
+  send:
+    runs-on: ubuntu-latest
+    env:
+      DAILY_TO: ${{ secrets.DIGEST_DAILY_TO }}
+      WEEKLY_TO: ${{ secrets.DIGEST_WEEKLY_TO }}
+      HAS_GMAIL: ${{ secrets.GMAIL_APP_PASSWORD != '' }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Decide which digests go out today
+        id: plan
+        env:
+          CHOICE: ${{ inputs.frequency }}
+        run: |
+          if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
+            case "$CHOICE" in
+              daily) echo "daily=true"  >> "$GITHUB_OUTPUT"; echo "weekly=false" >> "$GITHUB_OUTPUT" ;;
+              weekly) echo "daily=false" >> "$GITHUB_OUTPUT"; echo "weekly=true" >> "$GITHUB_OUTPUT" ;;
+              both) echo "daily=true"   >> "$GITHUB_OUTPUT"; echo "weekly=true" >> "$GITHUB_OUTPUT" ;;
+            esac
+          else
+            echo "daily=true" >> "$GITHUB_OUTPUT"
+            # weekly goes out on Mondays
+            [ "$(date -u +%u)" = "1" ] && echo "weekly=true" >> "$GITHUB_OUTPUT" || echo "weekly=false" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Build daily digest
+        if: steps.plan.outputs.daily == 'true' && env.DAILY_TO != '' && env.HAS_GMAIL == 'true'
+        run: node scripts/build-digest.mjs daily
+
+      - name: Send daily digest
+        if: steps.plan.outputs.daily == 'true' && env.DAILY_TO != '' && env.HAS_GMAIL == 'true'
+        uses: dawidd6/action-send-mail@v3
+        with:
+          server_address: smtp.gmail.com
+          server_port: 465
+          secure: true
+          username: ${{ secrets.GMAIL_ADDRESS }}
+          password: ${{ secrets.GMAIL_APP_PASSWORD }}
+          from: AI Daily News <${{ secrets.GMAIL_ADDRESS }}>
+          to: ${{ secrets.DIGEST_DAILY_TO }}
+          subject: file://subject.txt
+          html_body: file://digest.html
+
+      - name: Build weekly digest
+        if: steps.plan.outputs.weekly == 'true' && env.WEEKLY_TO != '' && env.HAS_GMAIL == 'true'
+        run: node scripts/build-digest.mjs weekly
+
+      - name: Send weekly digest
+        if: steps.plan.outputs.weekly == 'true' && env.WEEKLY_TO != '' && env.HAS_GMAIL == 'true'
+        uses: dawidd6/action-send-mail@v3
+        with:
+          server_address: smtp.gmail.com
+          server_port: 465
+          secure: true
+          username: ${{ secrets.GMAIL_ADDRESS }}
+          password: ${{ secrets.GMAIL_APP_PASSWORD }}
+          from: AI Daily News <${{ secrets.GMAIL_ADDRESS }}>
+          to: ${{ secrets.DIGEST_WEEKLY_TO }}
+          subject: file://subject.txt
+          html_body: file://digest.html

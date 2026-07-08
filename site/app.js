@@ -548,6 +548,32 @@ function maybeNotify() {
 // and otherwise on the first visit of the day.
 setInterval(maybeNotify, 30 * 1000);
 
+/* ---------- email digest signup ---------- */
+
+// Subscription requests go by email to the site owner, who adds the address
+// to the private recipient list (kept in GitHub secrets, never in this
+// public repo). Address is assembled at runtime to avoid scraper harvesting.
+const OWNER_EMAIL = ["azxfoo", "gmail.com"].join("@");
+
+document.getElementById("digest-subscribe").addEventListener("click", () => {
+  const $email = document.getElementById("digest-email");
+  const $status = document.getElementById("digest-status");
+  const email = $email.value.trim();
+  if (!$email.checkValidity() || !email) {
+    $status.textContent = "Please enter a valid email address.";
+    return;
+  }
+  const freq = document.querySelector('input[name="digest-freq"]:checked')?.value ?? "daily";
+  const subject = encodeURIComponent("News digest subscription");
+  const body = encodeURIComponent(
+    `Please subscribe ${email} to the ${freq} AI Daily News digest.`
+  );
+  window.open(`mailto:${OWNER_EMAIL}?subject=${subject}&body=${body}`, "_self");
+  $status.textContent =
+    `Almost done — your email app just opened with a ${freq} subscription request. ` +
+    "Hit send and you'll be added shortly.";
+});
+
 /* ---------- data loading ---------- */
 
 async function load({ spin = false } = {}) {

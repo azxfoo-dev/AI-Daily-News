@@ -85,6 +85,27 @@ free Reddit API app to fetch community posts:
 Without these secrets everything else still works — the public-opinion
 checkbox just has no stories to show.
 
+## Email digests (daily / weekly)
+
+A second workflow (`digest.yml`) emails a news digest — daily at 12:00 UTC
+and weekly on Mondays — using your Gmail account. One-time setup:
+
+1. Create a Gmail **app password**: https://myaccount.google.com/apppasswords
+   (requires 2-step verification on the Google account). Copy the 16-character
+   password.
+2. Add four repository secrets (**Settings → Secrets and variables →
+   Actions**):
+   - `GMAIL_ADDRESS` — your Gmail address (the sender)
+   - `GMAIL_APP_PASSWORD` — the app password from step 1
+   - `DIGEST_DAILY_TO` — comma-separated emails for the daily digest
+   - `DIGEST_WEEKLY_TO` — comma-separated emails for the weekly digest
+3. Test with **Actions → Email digest → Run workflow**.
+
+Subscribers from the in-app "Get it by email" box arrive as emails to you;
+add them to the matching secret. The digest never exposes recipient
+addresses in the public repo. To change the send hour, edit the cron in
+`.github/workflows/digest.yml`.
+
 ## Customizing topics
 
 Edit [`scripts/feeds.json`](scripts/feeds.json). Each category has a list of

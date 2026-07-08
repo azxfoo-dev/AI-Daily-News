@@ -2,7 +2,7 @@
    and still shows the last-known headlines offline. news.json is always
    fetched network-first with the cache as fallback. */
 
-const SHELL_CACHE = "shell-v4";
+const SHELL_CACHE = "shell-v5";
 const DATA_CACHE = "data-v1";
 const SHELL = [
   "./",

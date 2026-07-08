@@ -55,6 +55,16 @@
         <label class="option"><input type="checkbox" id="opt-briefing"><span><strong>Daily briefing</strong><small> — full-screen summary when you open the app (once a day)</small></span></label>
         <label class="option"><input type="checkbox" id="opt-notify"><span><strong>Headline notification</strong><small> — top story at midnight while the app is open, or on your first visit of the day</small></span></label>
       </div>
+      <h3 class="dialog-section">Get it by email</h3>
+      <div class="email-box">
+        <input type="email" id="digest-email" placeholder="you@example.com" autocomplete="email">
+        <div class="email-freq" role="radiogroup" aria-label="Email frequency">
+          <label class="option density-option"><input type="radio" name="digest-freq" value="daily" checked><span>Daily</span></label>
+          <label class="option density-option"><input type="radio" name="digest-freq" value="weekly"><span>Weekly</span></label>
+        </div>
+        <button type="button" class="btn-primary" id="digest-subscribe">Subscribe</button>
+        <p class="dialog-hint" id="digest-status">A news digest lands in your inbox every morning (or Monday mornings for weekly).</p>
+      </div>
       <div class="dialog-actions">
         <button value="cancel" class="btn-secondary">Cancel</button>
         <button value="save" class="btn-primary" id="customize-save">Save</button>

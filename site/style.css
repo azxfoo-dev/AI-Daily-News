@@ -430,6 +430,28 @@ dialog h2 { margin: 0 0 0.25rem; font-size: 1.05rem; }
   font-weight: 600;
 }
 
+.email-box {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-bottom: 0.9rem;
+}
+.email-box input[type="email"] {
+  padding: 0.55rem 0.7rem;
+  border-radius: 8px;
+  border: 1px solid var(--border);
+  background: var(--bg);
+  color: var(--text);
+  font-size: 0.9rem;
+}
+.email-box input[type="email"]:focus {
+  outline: 2px solid var(--accent);
+  border-color: var(--accent);
+}
+.email-freq { display: flex; gap: 0.4rem; }
+.email-box .btn-primary { align-self: flex-start; }
+#digest-status { margin: 0; }
+
 .status {
   text-align: center;
   color: var(--text-dim);
